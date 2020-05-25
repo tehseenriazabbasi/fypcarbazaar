@@ -1,0 +1,19 @@
+.header {
+    height: 120px;
+    background: #fa9898;
+}
+.header-font {
+    font-family: "Roboto";
+    color : #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+.models {
+    margin-top: 70px;
+    font-family: "Roboto";
+    font-size: medium;
+}
+.img-aside {
+    width: 540px;
+}

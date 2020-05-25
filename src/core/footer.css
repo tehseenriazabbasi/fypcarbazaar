@@ -1,0 +1,11 @@
+.bg-red {
+    background-color: #c43b3b;
+}
+.page-footer a {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+.page-footer a:hover {
+    color: #ffffff;
+}

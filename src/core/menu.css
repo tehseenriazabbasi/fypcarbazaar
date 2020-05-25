@@ -1,0 +1,22 @@
+.secnav > div > div {
+    display: inline-block;
+    padding-right: 20px;
+}
+.secnav > div > div > i {
+    padding-right: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .secnav > div > div {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) /* @grid-float-breakpoint -1 */
+{
+    .fixed-top
+    {
+        position: relative;
+        top: auto;
+    }
+}

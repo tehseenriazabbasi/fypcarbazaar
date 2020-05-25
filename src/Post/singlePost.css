@@ -1,0 +1,17 @@
+.card-border{
+    border: 1px solid #c43b3b;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    background-color: #4e555b;
+    border-radius: 3px;
+}
+
+.capt{
+    position: relative;
+    text-align: center;
+    color: white;
+}

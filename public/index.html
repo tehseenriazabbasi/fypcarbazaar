@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+      <!-- Material Design Bootstrap -->
+<!--    <link rel="stylesheet"-->
+<!--          href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"-->
+<!--          integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"-->
+<!--          crossorigin="anonymous">-->
+
+
+    <title>Car Bazar</title>
+
+
+    <!--&lt;!&ndash; Font Awesome Icons &ndash;&gt;
+    <link rel="stylesheet" href="/fontawesome-free/css/all.min.css">
+    &lt;!&ndash; Theme style &ndash;&gt;
+    <link rel="stylesheet" href="/dist/css/adminlte.min.css">
+    &lt;!&ndash; Google Font: Source Sans Pro &ndash;&gt;
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+-->
+    <style>
+
+        
+      .card-post {
+        -webkit-transition: width 2s;
+        transition: width 2s;
+      }
+      .card-post:hover {
+        opacity: 0.75;
+        text-decoration: none;
+      }
+
+      .secnav{
+
+        background: #c43b3b;
+        color: #ffffff;
+
+      }
+      span{
+        font-family: "Roboto";
+        font-weight: bold;
+      }
+
+
+    </style>
+
+    <script>
+
+
+
+      var head = document.head;
+
+
+      /*var link = document.createElement("link");
+      var theme = localStorage.getItem("theme");*/
+      var font = localStorage.getItem("font");
+      var fontfam = localStorage.getItem("family");
+
+      var style = document.createElement('style');
+      style.innerHTML = `
+        * {
+            font-size: ${font};
+            font-family: ${fontfam};
+        }
+  `     ;
+      head.appendChild(style);
+
+
+      /*if (!theme) {
+        theme = 'bootstrap';
+      }*/
+
+
+
+
+      /*link.type = "text/css";
+      link.rel = "stylesheet";
+      link.href = "themes/" + theme + ".css";
+      head.appendChild(link);*/
+    </script>
+
+  </head>
+  <body class="hold-transition sidebar-mini">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+
+  <!--  &lt;!&ndash; jQuery &ndash;&gt;
+    <script src="/plugins/jquery/jquery.min.js"></script>
+    &lt;!&ndash; Bootstrap 4 &ndash;&gt;
+    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    &lt;!&ndash; AdminLTE App &ndash;&gt;
+    <script src="/dist/js/adminlte.min.js"></script>-->
+  </body>
+</html>
