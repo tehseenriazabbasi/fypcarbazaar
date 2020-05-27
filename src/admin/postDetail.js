@@ -53,7 +53,7 @@ class PostDetail extends Component {
                                             <p>{post.city}</p>
                                         </div>
                                         <div className={"col-md-6"}>
-                                            <img className={"img-thumbnail"} src={'http://localhost:8080'+photo[0]}  style={{width: 'auto' , height : "200px"}}
+                                            <img className={"img-thumbnail"} src={photo[0]}  style={{width: 'auto' , height : "200px"}}
                                             />
                                         </div>
                                     </div>

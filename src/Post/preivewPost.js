@@ -159,7 +159,7 @@ Thanks.`});
                                                     height: "500px",
                                                     "width": "auto",
                                                     "max-width": "100%"
-                                                }} src={'http://localhost:8080'+photos[0]} alt="First slide"/>
+                                                }} src={photos[0]} alt="First slide"/>
                                                 <div className="top-left">1/3</div>
                                             </div>
                                             <div className="carousel-item capt" style={{"text-align": "center" ,'background-color': "#d7d7d7"}}>
@@ -167,7 +167,7 @@ Thanks.`});
                                                     height: "500px",
                                                     "width": "auto",
                                                     "max-width": "100%"
-                                                }} src={'http://localhost:8080'+photos[1]} alt="Second slide"/>
+                                                }} src={photos[1]} alt="Second slide"/>
                                                 <div className="top-left">2/3</div>
                                             </div>
 
@@ -176,7 +176,7 @@ Thanks.`});
                                                     height: "500px",
                                                     "width": "auto",
                                                     "max-width": "100%"
-                                                }} src={'http://localhost:8080'+photos[2]} alt="Second slide"/>
+                                                }} src={photos[2]} alt="Second slide"/>
                                                 <div className="top-left">3/3</div>
                                             </div>
 

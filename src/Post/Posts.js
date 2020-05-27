@@ -425,7 +425,7 @@ class Posts extends Component {
                                             <div className="card-body" style={{"border-left": "5px solid yellow"}}>
 
                                                 <div style={{"text-align": "center"}}>
-                                                    <img className={"card-img-top mx-auto"} src={'http://localhost:8080'+post[1].photo[0]} alt={post.title} style={{
+                                                    <img className={"card-img-top mx-auto"} src={post[1].photo[0]} alt={post.title} style={{
                                                         height: "200px",
                                                         "width": "auto",
                                                         "max-width": "100%"
@@ -530,7 +530,7 @@ class Posts extends Component {
                                         <div className="card-body" style={{"border-left": "5px solid yellow"}}>
 
                                             <div style={{"text-align": "center"}}>
-                                                <img className={"card-img-top mx-auto"} src={'http://localhost:8080'+post[1].photo[0]} alt={post.title} style={{
+                                                <img className={"card-img-top mx-auto"} src={post[1].photo[0]} alt={post.title} style={{
                                                     height: "200px",
                                                     "width": "auto",
                                                     "max-width": "100%"
@@ -615,7 +615,7 @@ class Posts extends Component {
                                 <a className="card card-post mt-2"  key={i} href={`/post/${post._id}`} target={
                                     "_blank"}>
                                     <div style={{"text-align": "center"}}>
-                                        <img className={"card-img-top mx-auto"} src={'http://localhost:8080'+post.photo[0]} alt={post.title} style={{
+                                        <img className={"card-img-top mx-auto"} src={post.photo[0]} alt={post.title} style={{
                                             height: "200px",
                                             "width": "auto",
                                             "max-width": "100%"

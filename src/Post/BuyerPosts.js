@@ -175,7 +175,7 @@ class BuyerPosts extends Component {
                                         </div>
                                         <div style={{"text-align": "center"}}>
 
-                                            <img className={"card-img-top mx-auto"} src={'http://localhost:8080'+post.photo[0]} alt={post.title} style={{
+                                            <img className={"card-img-top mx-auto"} src={post.photo[0]} alt={post.title} style={{
                                                 height: "200px",
                                                 "width": "auto",
                                                 "max-width": "100%"
