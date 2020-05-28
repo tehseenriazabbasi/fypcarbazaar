@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15a29b6d-a212-4371-94c1-731a08a4e254" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Post/apiPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Post/apiPost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/admin/apiReport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/apiReport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chatbot/apiChatbot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatbot/apiChatbot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contatcUs/contactApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contatcUs/contactApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/review/apiReview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/review/apiReview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings/settingApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/settingApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/apiUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/apiUser.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Post/apiPost.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="596" column="55" selection-start-line="596" selection-start-column="55" selection-end-line="596" selection-end-column="55" />
+            <state relative-caret-position="487">
+              <caret line="113" column="58" lean-forward="true" selection-start-line="113" selection-start-column="58" selection-end-line="113" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -56,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/src/review/apiReview.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-567">
-              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -65,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/src/user/apiUser.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="249">
-              <caret line="147" column="9" lean-forward="true" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
+              <caret line="147" column="9" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -92,16 +86,16 @@
         <entry file="file://$PROJECT_DIR$/src/admin/apiReport.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="249">
-              <caret line="362" column="41" lean-forward="true" selection-start-line="362" selection-start-column="41" selection-end-line="362" selection-end-column="41" />
+              <caret line="362" column="41" selection-start-line="362" selection-start-column="41" selection-end-line="362" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/auth/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-176">
-              <caret line="139" column="55" selection-start-line="139" selection-start-column="55" selection-end-line="139" selection-end-column="55" />
+            <state relative-caret-position="300">
+              <caret line="167" column="20" lean-forward="true" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -110,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -192,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/Post/preivewPost.js" />
         <option value="$PROJECT_DIR$/src/Post/Posts.js" />
         <option value="$PROJECT_DIR$/src/admin/postDetail.js" />
-        <option value="$PROJECT_DIR$/src/Post/apiPost.js" />
         <option value="$PROJECT_DIR$/src/settings/settingApi.js" />
         <option value="$PROJECT_DIR$/src/review/apiReview.js" />
         <option value="$PROJECT_DIR$/src/user/apiUser.js" />
@@ -200,6 +193,7 @@
         <option value="$PROJECT_DIR$/src/chatbot/apiChatbot.js" />
         <option value="$PROJECT_DIR$/src/admin/apiReport.js" />
         <option value="$PROJECT_DIR$/src/auth/index.js" />
+        <option value="$PROJECT_DIR$/src/Post/apiPost.js" />
       </list>
     </option>
   </component>
@@ -226,18 +220,13 @@
             <path>
               <item name="projectapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectapp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="Post" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -478,12 +467,12 @@
       <workItem from="1590572311584" duration="1426000" />
       <workItem from="1590576960981" duration="1227000" />
       <workItem from="1590594730633" duration="4540000" />
-      <workItem from="1590657529135" duration="1958000" />
+      <workItem from="1590657529135" duration="3634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="894110000" />
+    <option name="totallyTimeSpent" value="895786000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -991,14 +980,7 @@
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Post/apiPost.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="596" column="55" selection-start-line="596" selection-start-column="55" selection-end-line="596" selection-end-column="55" />
+          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1012,14 +994,14 @@
     <entry file="file://$PROJECT_DIR$/src/review/apiReview.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-567">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/user/apiUser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
-          <caret line="147" column="9" lean-forward="true" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
+          <caret line="147" column="9" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1040,14 +1022,21 @@
     <entry file="file://$PROJECT_DIR$/src/admin/apiReport.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
-          <caret line="362" column="41" lean-forward="true" selection-start-line="362" selection-start-column="41" selection-end-line="362" selection-end-column="41" />
+          <caret line="362" column="41" selection-start-line="362" selection-start-column="41" selection-end-line="362" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/auth/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="139" column="55" selection-start-line="139" selection-start-column="55" selection-end-line="139" selection-end-column="55" />
+        <state relative-caret-position="300">
+          <caret line="167" column="20" lean-forward="true" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Post/apiPost.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="113" column="58" lean-forward="true" selection-start-line="113" selection-start-column="58" selection-end-line="113" selection-end-column="58" />
         </state>
       </provider>
     </entry>

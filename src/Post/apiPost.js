@@ -19,7 +19,7 @@ export const list_buyerPosts = ()=> {
 };
 
 export const listolx = ()=> {
-    return fetch(`http://localhost:8080/olx`,{
+    return fetch(`https://carbazar-scrapper.herokuapp.com/olx`,{
         method: "GET"
     })
         .then(res => {
@@ -30,7 +30,7 @@ export const listolx = ()=> {
 
 
 export const listolxhome = ()=> {
-    return fetch(`http://localhost:5000/`,{
+    return fetch(`hhttps://carbazar-scrapper.herokuapp.com/`,{
         method: "GET"
     })
         .then(res => {
@@ -42,7 +42,7 @@ export const listolxhome = ()=> {
 
 export const listPKWhome = ()=> {
 
-    return fetch(`http://localhost:5000/pakWheelsHome`,{
+    return fetch(`https://carbazar-scrapper.herokuapp.com/pakWheelsHome`,{
         method: "GET"
     })
         .then(res => {
@@ -53,7 +53,7 @@ export const listPKWhome = ()=> {
 
 
 export const listPKMhome = ()=> {
-    return fetch(`http://localhost:5000/pkMotorsHome`,{
+    return fetch(`https://carbazar-scrapper.herokuapp.com/pkMotorsHome`,{
         method: "GET"
     })
         .then(res => {
@@ -63,7 +63,7 @@ export const listPKMhome = ()=> {
 };
 
 export const searchOlx = (search)=> {
-    return fetch(`http://localhost:5000/search?query=${search}`,{
+    return fetch(`https://carbazar-scrapper.herokuapp.com/search?query=${search}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -79,7 +79,7 @@ export const searchOlx = (search)=> {
 export const searchPKW = (search)=> {
     console.log(search);
 
-    return fetch(`http://localhost:5000/pakWheelsSearch?query=${search}`,{
+    return fetch(`https://carbazar-scrapper.herokuapp.com/pakWheelsSearch?query=${search}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -96,7 +96,7 @@ export const searchPKW = (search)=> {
 export const searchPKM = (search)=> {
     console.log(search);
 
-    return fetch(`http://localhost:5000/pkMotorsSearch?query=${search}`,{
+    return fetch(`https://carbazar-scrapper.herokuapp.com/pkMotorsSearch?query=${search}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
