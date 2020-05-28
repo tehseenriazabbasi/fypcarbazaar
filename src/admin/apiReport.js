@@ -1,6 +1,6 @@
 export const getReportedUsers = (token)=> {
 
-    return fetch(`http://localhost:8080/getReportedUsers`,{
+    return fetch(`https://carbazar-server.herokuapp.com/getReportedUsers`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -17,7 +17,7 @@ export const getReportedUsers = (token)=> {
 
 export const getUserReports = (token)=> {
 
-    return fetch(`http://localhost:8080/getUserReports`,{
+    return fetch(`https://carbazar-server.herokuapp.com/getUserReports`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -35,7 +35,7 @@ export const getUserReports = (token)=> {
 
 export const disableUser = (userid, token)=>{
 
-    return fetch(`http://localhost:8080/user/disable/${userid}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/user/disable/${userid}`,{
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -52,7 +52,7 @@ export const disableUser = (userid, token)=>{
 
 export const enableUser = (userid, token)=>{
 
-    return fetch(`http://localhost:8080/user/enable/${userid}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/user/enable/${userid}`,{
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -69,7 +69,7 @@ export const enableUser = (userid, token)=>{
 
 export const getReportedPosts = (token)=> {
 
-    return fetch(`http://localhost:8080/getReportedPosts`,{
+    return fetch(`https://carbazar-server.herokuapp.com/getReportedPosts`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -86,7 +86,7 @@ export const getReportedPosts = (token)=> {
 
 export const getReportedPostsSearch = (token, search)=> {
 
-    return fetch(`http://localhost:8080/postSearch?search=${search} `,{
+    return fetch(`https://carbazar-server.herokuapp.com/postSearch?search=${search} `,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -103,7 +103,7 @@ export const getReportedPostsSearch = (token, search)=> {
 
 export const PostsSearch = (token, search)=> {
 
-    return fetch(`http://localhost:8080/postSearchall?search=${search} `,{
+    return fetch(`https://carbazar-server.herokuapp.com/postSearchall?search=${search} `,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -120,7 +120,7 @@ export const PostsSearch = (token, search)=> {
 
 export const getReportedUserSearch = (token, search)=> {
 
-    return fetch(`http://localhost:8080/userSearch?search=${search} `,{
+    return fetch(`https://carbazar-server.herokuapp.com/userSearch?search=${search} `,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -138,7 +138,7 @@ export const getReportedUserSearch = (token, search)=> {
 
 export const UserSearch = (token, search)=> {
 
-    return fetch(`http://localhost:8080/userSearchall?search=${search} `,{
+    return fetch(`https://carbazar-server.herokuapp.com/userSearchall?search=${search} `,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -155,7 +155,7 @@ export const UserSearch = (token, search)=> {
 
 export const getUserPostReports = (token)=> {
 
-    return fetch(`http://localhost:8080/getUserPostReports`,{
+    return fetch(`https://carbazar-server.herokuapp.com/getUserPostReports`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -172,7 +172,7 @@ export const getUserPostReports = (token)=> {
 
 export const getPendingRequests = (token)=> {
 
-    return fetch(`http://localhost:8080/getPendingUsers`,{
+    return fetch(`https://carbazar-server.herokuapp.com/getPendingUsers`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -189,7 +189,7 @@ export const getPendingRequests = (token)=> {
 
 export const disablePost = (postid, token)=>{
 
-    return fetch(`http://localhost:8080/post/disable/${postid}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/post/disable/${postid}`,{
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -207,7 +207,7 @@ export const disablePost = (postid, token)=>{
 
 export const enablePost = (postid, token)=>{
 
-    return fetch(`http://localhost:8080/post/enable/${postid}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/post/enable/${postid}`,{
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -241,7 +241,7 @@ export const warnUser = (email, postname) => {
 
 export const totalUsers = (token)=> {
 
-    return fetch(`http://localhost:8080/getTotalUsers`,{
+    return fetch(`https://carbazar-server.herokuapp.com/getTotalUsers`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -258,7 +258,7 @@ export const totalUsers = (token)=> {
 
 export const totalPosts = (token)=> {
 
-    return fetch(`http://localhost:8080/getTotalPosts`,{
+    return fetch(`https://carbazar-server.herokuapp.com/getTotalPosts`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -275,7 +275,7 @@ export const totalPosts = (token)=> {
 
 export const activePosts = (token)=> {
 
-    return fetch(`http://localhost:8080/getActiveTotalPosts`,{
+    return fetch(`https://carbazar-server.herokuapp.com/getActiveTotalPosts`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -292,7 +292,7 @@ export const activePosts = (token)=> {
 
 export const deactivePosts = (token)=> {
 
-    return fetch(`http://localhost:8080/getDeactivedTotalPosts`,{
+    return fetch(`https://carbazar-server.herokuapp.com/getDeactivedTotalPosts`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -309,7 +309,7 @@ export const deactivePosts = (token)=> {
 
 export const newMembers = (token)=> {
 
-    return fetch(`http://localhost:8080/getNewMembers/`,{
+    return fetch(`https://carbazar-server.herokuapp.com/getNewMembers/`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -325,7 +325,7 @@ export const newMembers = (token)=> {
 };
 
 export const list = ()=> {
-    return fetch(`http://localhost:8080/getallposts/`,{
+    return fetch(`https://carbazar-server.herokuapp.com/getallposts/`,{
         method: "GET"
     })
         .then(res => {
@@ -335,7 +335,7 @@ export const list = ()=> {
 };
 
 export const deactivatedPosts = ()=> {
-    return fetch(`http://localhost:8080/getDeactivatedposts/`,{
+    return fetch(`https://carbazar-server.herokuapp.com/getDeactivatedposts/`,{
         method: "GET"
     })
         .then(res => {
@@ -345,7 +345,7 @@ export const deactivatedPosts = ()=> {
 };
 
 export const getnewUsers = ()=> {
-    return fetch(`http://localhost:8080/getnewUsers/`,{
+    return fetch(`https://carbazar-server.herokuapp.com/getnewUsers/`,{
         method: "GET"
     })
         .then(res => {
@@ -355,7 +355,7 @@ export const getnewUsers = ()=> {
 };
 
 export const getPending = ()=> {
-    return fetch(`http://localhost:8080/pendingDealers/`,{
+    return fetch(`https://carbazar-server.herokuapp.com/pendingDealers/`,{
         method: "GET"
     })
         .then(res => {
@@ -366,7 +366,7 @@ export const getPending = ()=> {
 
 export const verifyDealer = (userid, token)=>{
 
-    return fetch(`http://localhost:8080/dealer/verify/${userid}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/dealer/verify/${userid}`,{
         method: "PUT",
         headers: {
             Accept: "application/json",

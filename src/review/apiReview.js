@@ -1,6 +1,6 @@
 export const searchReviews = (make, model, version)=>{
 
-    return fetch(`http://localhost:8080/searchCar?make=${make}&model=${model}&version=${version}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/searchCar?make=${make}&model=${model}&version=${version}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -16,7 +16,7 @@ export const searchReviews = (make, model, version)=>{
 
 export const createReview = (review)=>{
         console.log(review);
-    return fetch(`http://localhost:8080/createReview`,{
+    return fetch(`https://carbazar-server.herokuapp.com/createReview`,{
         method: "POST",
         headers: {
             Accept : "application/json",
@@ -34,7 +34,7 @@ export const createReview = (review)=>{
 
 export const like = (review)=>{
     console.log(review);
-    return fetch(`http://localhost:8080/likecar`,{
+    return fetch(`https://carbazar-server.herokuapp.com/likecar`,{
         method: "PUT",
         headers: {
             Accept : "application/json",
@@ -52,7 +52,7 @@ export const like = (review)=>{
 
 export const dislike = (review)=>{
     console.log(review);
-    return fetch(`http://localhost:8080/dislikecar`,{
+    return fetch(`https://carbazar-server.herokuapp.com/dislikecar`,{
         method: "PUT",
         headers: {
             Accept : "application/json",

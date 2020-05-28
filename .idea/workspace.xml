@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15a29b6d-a212-4371-94c1-731a08a4e254" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Post/apiPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Post/apiPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/admin/apiReport.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/admin/apiReport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chatbot/apiChatbot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/chatbot/apiChatbot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contatcUs/contactApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contatcUs/contactApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/review/apiReview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/review/apiReview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/settingApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/settingApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/apiUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/apiUser.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,66 +23,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Post/SingleBuyerPost.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5304">
-              <caret line="322" column="24" selection-start-line="322" selection-start-column="24" selection-end-line="322" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Post/SinglePost.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2720">
-              <caret line="180" column="56" selection-start-line="180" selection-start-column="56" selection-end-line="180" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Post/preivewPost.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2397">
-              <caret line="161" column="56" selection-start-line="161" selection-start-column="56" selection-end-line="161" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Post/Posts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9894">
-              <caret line="617" column="85" selection-start-line="617" selection-start-column="85" selection-end-line="617" selection-end-column="85" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/admin/postDetail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="55" column="82" selection-start-line="55" selection-start-column="82" selection-end-line="55" selection-end-column="82" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/admin/profileDetail.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="416">
@@ -87,73 +34,83 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Post/apiPost.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="18" />
+            <state relative-caret-position="201">
+              <caret line="596" column="55" selection-start-line="596" selection-start-column="55" selection-end-line="596" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainRouter.js">
+        <entry file="file://$PROJECT_DIR$/src/settings/settingApi.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+              <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/themes/lux.css">
+        <entry file="file://$PROJECT_DIR$/src/review/apiReview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3196">
-              <caret line="11" column="177797" selection-start-line="11" selection-start-column="177797" selection-end-line="11" selection-end-column="177797" />
-              <folding>
-                <element signature="e#30624#30858#2" expanded="true" />
-                <element signature="e#31729#31882#1" expanded="true" />
-                <element signature="e#31920#32154#1" expanded="true" />
-                <element signature="e#35408#35684#2" expanded="true" />
-                <element signature="e#36581#36734#1" expanded="true" />
-                <element signature="e#36772#37048#1" expanded="true" />
-                <element signature="e#69855#70042#2" expanded="true" />
-                <element signature="e#70275#70411#2" expanded="true" />
-                <element signature="e#70820#70953#2" expanded="true" />
-                <element signature="e#72696#72849#1" expanded="true" />
-                <element signature="e#87854#88084#2" expanded="true" />
-                <element signature="e#88925#89161#2" expanded="true" />
-                <element signature="e#121609#121786#2" expanded="true" />
-                <element signature="e#121832#122009#2" expanded="true" />
-              </folding>
+            <state relative-caret-position="-567">
+              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/themes/yeti.css">
+        <entry file="file://$PROJECT_DIR$/src/user/apiUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3298">
-              <caret line="11" column="183813" selection-start-line="11" selection-start-column="183813" selection-end-line="11" selection-end-column="183813" />
-              <folding>
-                <element signature="e#30601#30835#2" expanded="true" />
-                <element signature="e#31715#31865#1" expanded="true" />
-                <element signature="e#31905#32139#1" expanded="true" />
-                <element signature="e#35396#35672#2" expanded="true" />
-                <element signature="e#36578#36728#1" expanded="true" />
-                <element signature="e#36768#37044#1" expanded="true" />
-                <element signature="e#69817#70004#2" expanded="true" />
-                <element signature="e#70237#70373#2" expanded="true" />
-                <element signature="e#70784#70917#2" expanded="true" />
-                <element signature="e#72678#72828#1" expanded="true" />
-                <element signature="e#87879#88109#2" expanded="true" />
-                <element signature="e#88966#89202#2" expanded="true" />
-                <element signature="e#121587#121764#2" expanded="true" />
-                <element signature="e#121810#121987#2" expanded="true" />
-              </folding>
+            <state relative-caret-position="249">
+              <caret line="147" column="9" lean-forward="true" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contatcUs/contactApi.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/chatbot/apiChatbot.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/admin/apiReport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="362" column="41" lean-forward="true" selection-start-line="362" selection-start-column="41" selection-end-line="362" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/auth/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-176">
+              <caret line="139" column="55" selection-start-line="139" selection-start-column="55" selection-end-line="139" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -172,11 +129,13 @@
       <find>class=</find>
       <find>list</find>
       <find>name</find>
+      <find>http://localhost:8080</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>list1</replace>
       <replace>title</replace>
+      <replace>https://carbazar-server.herokuapp.com</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Khizar\WebstormProjects\projectapp\src\Post</dir>
@@ -190,14 +149,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/chatbot/apiChatbot.js" />
-        <option value="$PROJECT_DIR$/src/core/Home.js" />
-        <option value="$PROJECT_DIR$/src/admin/pending.js" />
-        <option value="$PROJECT_DIR$/src/Post/signup.css" />
         <option value="$PROJECT_DIR$/src/core/adminVerify.js" />
         <option value="$PROJECT_DIR$/src/admin/dealer_details.js" />
         <option value="$PROJECT_DIR$/src/admin/verifyDealer.js" />
-        <option value="$PROJECT_DIR$/src/settings/settingApi.js" />
         <option value="$PROJECT_DIR$/src/user/Profile.js" />
         <option value="$PROJECT_DIR$/src/user/Profiletabs.js" />
         <option value="$PROJECT_DIR$/src/Post/buyersAd.js" />
@@ -211,12 +165,10 @@
         <option value="$PROJECT_DIR$/src/admin/PostReports.js" />
         <option value="$PROJECT_DIR$/src/admin/Admin.js" />
         <option value="$PROJECT_DIR$/src/admin/UserManagement.js" />
-        <option value="$PROJECT_DIR$/src/admin/apiReport.js" />
         <option value="$PROJECT_DIR$/src/admin/AdsManagement.js" />
         <option value="$PROJECT_DIR$/src/Post/iframes.js" />
         <option value="$PROJECT_DIR$/src/core/Menu.js" />
         <option value="$PROJECT_DIR$/src/Post/singlePost.css" />
-        <option value="$PROJECT_DIR$/src/review/apiReview.js" />
         <option value="$PROJECT_DIR$/src/user/ReportUser.js" />
         <option value="$PROJECT_DIR$/src/Post/reportPost.js" />
         <option value="$PROJECT_DIR$/src/review/newReview.js" />
@@ -224,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/MainRouter.js" />
         <option value="$PROJECT_DIR$/src/Post/NewPost.js" />
         <option value="$PROJECT_DIR$/src/Post/EditPost.js" />
-        <option value="$PROJECT_DIR$/src/Post/apiPost.js" />
         <option value="$PROJECT_DIR$/src/Post/SingleBuyerPost.js" />
         <option value="$PROJECT_DIR$/public/themes/bootstrap.css" />
         <option value="$PROJECT_DIR$/public/themes/lux.css" />
@@ -241,6 +192,14 @@
         <option value="$PROJECT_DIR$/src/Post/preivewPost.js" />
         <option value="$PROJECT_DIR$/src/Post/Posts.js" />
         <option value="$PROJECT_DIR$/src/admin/postDetail.js" />
+        <option value="$PROJECT_DIR$/src/Post/apiPost.js" />
+        <option value="$PROJECT_DIR$/src/settings/settingApi.js" />
+        <option value="$PROJECT_DIR$/src/review/apiReview.js" />
+        <option value="$PROJECT_DIR$/src/user/apiUser.js" />
+        <option value="$PROJECT_DIR$/src/contatcUs/contactApi.js" />
+        <option value="$PROJECT_DIR$/src/chatbot/apiChatbot.js" />
+        <option value="$PROJECT_DIR$/src/admin/apiReport.js" />
+        <option value="$PROJECT_DIR$/src/auth/index.js" />
       </list>
     </option>
   </component>
@@ -278,13 +237,7 @@
               <item name="projectapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projectapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projectapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Post" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -306,12 +259,12 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Khizar\WebstormProjects\projectapp\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Khizar\WebstormProjects\projectapp\src\images" />
       <recent name="C:\Users\Khizar\WebstormProjects\projectapp\src\user" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Khizar\WebstormProjects\projectapp\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -525,12 +478,12 @@
       <workItem from="1590572311584" duration="1426000" />
       <workItem from="1590576960981" duration="1227000" />
       <workItem from="1590594730633" duration="4540000" />
-      <workItem from="1590657529135" duration="320000" />
+      <workItem from="1590657529135" duration="1958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="892472000" />
+    <option name="totallyTimeSpent" value="894110000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -559,7 +512,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074404" side_tool="true" weight="0.30533117" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49925596" visible="true" weight="0.05815832" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49925596" visible="true" weight="0.048465267" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32956383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -591,23 +544,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/user/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="54" column="4" selection-start-line="51" selection-start-column="1" selection-end-line="54" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/EnableUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/admin/Admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
@@ -615,13 +551,6 @@
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/apiReport.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="103" column="24" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -704,23 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/user/apiUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auth/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="105" column="13" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Post/iframes.js" />
     <entry file="file://$PROJECT_DIR$/src/user/ResetPassword.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -732,13 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/settings/settingApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/Menu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -746,13 +651,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/review/apiReview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>
@@ -1090,10 +988,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Post/apiPost.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="18" />
+        <state relative-caret-position="201">
+          <caret line="596" column="55" selection-start-line="596" selection-start-column="55" selection-end-line="596" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/settings/settingApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/review/apiReview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-567">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/user/apiUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="147" column="9" lean-forward="true" selection-start-line="147" selection-start-column="9" selection-end-line="147" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contatcUs/contactApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chatbot/apiChatbot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/apiReport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="362" column="41" lean-forward="true" selection-start-line="362" selection-start-column="41" selection-end-line="362" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auth/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="139" column="55" selection-start-line="139" selection-start-column="55" selection-end-line="139" selection-end-column="55" />
         </state>
       </provider>
     </entry>

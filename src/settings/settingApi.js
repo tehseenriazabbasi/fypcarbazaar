@@ -1,5 +1,5 @@
 export const changeAdSetting = (userId)=>{
-    return fetch("http://localhost:8080/userAdsNoSetting/",{
+    return fetch("https://carbazar-server.herokuapp.com/userAdsNoSetting/",{
         method: "POST",
         headers: {
             Accept: "application/json",

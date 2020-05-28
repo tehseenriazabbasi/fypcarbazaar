@@ -111,7 +111,7 @@ export const searchPKM = (search)=> {
 
 export const searchCarBazar = (name)=> {
 
-    return fetch(`http://localhost:8080/searchCarBazaar?q=${encodeURIComponent(name)}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/searchCarBazaar?q=${encodeURIComponent(name)}`,{
         method: "Get",
         headers: {
             Accept: "application/json",
@@ -184,7 +184,7 @@ export const searchCbFilters = (make, model , kmd , et, min, max, regC, yearfrom
     console.log("yaerfrom: ", yearfrom);
     console.log("yaerto: ", yearto);
 
-    return fetch(`http://localhost:8080/CarBazaarFilters?make=${make}&KMDriven=${kmd}&engineType=${et}&min=${min}&max=${max}&regCity=${regC}&yearmin=${yearfrom}&yearmax=${yearto}&model=${model}&location=${location}&color=${exterior_color}&condition=${condition}&transmission=${trans}&engine_capacity=${cc}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/CarBazaarFilters?make=${make}&KMDriven=${kmd}&engineType=${et}&min=${min}&max=${max}&regCity=${regC}&yearmin=${yearfrom}&yearmax=${yearto}&model=${model}&location=${location}&color=${exterior_color}&condition=${condition}&transmission=${trans}&engine_capacity=${cc}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -208,7 +208,7 @@ export const create = (userId, token, post)=>{
         console.log(pair[0]+ ', ' + pair[1]);
     }
 
-    return fetch(`http://localhost:8080/post/new/${userId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/post/new/${userId}`,{
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -227,7 +227,7 @@ export const createBuyer = (userId, token, post)=>{
     // console.log("User data:" , ...post);
     // Display the key/value pairs
 
-    return fetch(`http://localhost:8080/post/newBuyer/${userId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/post/newBuyer/${userId}`,{
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -245,7 +245,7 @@ export const createBuyer = (userId, token, post)=>{
 
 
 export const singlePost = (postId)=> {
-    return fetch(`http://localhost:8080/post/${postId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/post/${postId}`,{
         method: "GET"
     })
         .then(res => {
@@ -255,7 +255,7 @@ export const singlePost = (postId)=> {
 };
 
 export const b_singlePost = (postId)=> {
-    return fetch(`http://localhost:8080/b_post/${postId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/b_post/${postId}`,{
         method: "GET"
     })
         .then(res => {
@@ -265,7 +265,7 @@ export const b_singlePost = (postId)=> {
 };
 
 export const listByUser = (userId, token)=> {
-    return fetch(`http://localhost:8080/posts/by/${userId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/posts/by/${userId}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -281,7 +281,7 @@ export const listByUser = (userId, token)=> {
 
 
 export const listBuyerByUser = (userId, token)=> {
-    return fetch(`http://localhost:8080/Buyerposts/by/${userId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/Buyerposts/by/${userId}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -296,7 +296,7 @@ export const listBuyerByUser = (userId, token)=> {
 };
 
 export const listSavedByUser = (userId, token)=> {
-    return fetch(`http://localhost:8080/postsSaved/by/${userId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/postsSaved/by/${userId}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -311,7 +311,7 @@ export const listSavedByUser = (userId, token)=> {
 };
 
 export const listBuyerSavedByUser = (userId, token)=> {
-    return fetch(`http://localhost:8080/postsSaved/by/${userId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/postsSaved/by/${userId}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -326,7 +326,7 @@ export const listBuyerSavedByUser = (userId, token)=> {
 };
 
 export const remove = (postid, token)=> {
-    return fetch(`http://localhost:8080/post/${postid}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/post/${postid}`,{
         method: "DELETE",
         headers: {
             Accept: "application/json",
@@ -343,7 +343,7 @@ export const remove = (postid, token)=> {
 
 export const removebuyer = (postid, token)=> {
     console.log("from back", postid);
-    return fetch(`http://localhost:8080/b_post/${postid}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/b_post/${postid}`,{
         method: "DELETE",
         headers: {
             Accept: "application/json",
@@ -360,7 +360,7 @@ export const removebuyer = (postid, token)=> {
 
 export const update = (postId, token, post)=>{
 
-    return fetch(`http://localhost:8080/post/${postId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/post/${postId}`,{
 
 
         method: "PUT",
@@ -379,7 +379,7 @@ export const update = (postId, token, post)=>{
 
 export const updatebuyer = (postId, token, post)=>{
 
-    return fetch(`http://localhost:8080/b_post/${postId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/b_post/${postId}`,{
 
 
         method: "PUT",
@@ -397,7 +397,7 @@ export const updatebuyer = (postId, token, post)=>{
 };
 
 export const like = (userId, token, postId)=>{
-    return fetch(`http://localhost:8080/post/like`,{
+    return fetch(`https://carbazar-server.herokuapp.com/post/like`,{
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -414,7 +414,7 @@ export const like = (userId, token, postId)=>{
 };
 
 export const unlike = (userId, token, postId)=>{
-    return fetch(`http://localhost:8080/post/unlike`,{
+    return fetch(`https://carbazar-server.herokuapp.com/post/unlike`,{
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -431,7 +431,7 @@ export const unlike = (userId, token, postId)=>{
 };
 
 export const getMake = ()=> {
-    return fetch(`http://localhost:8080/make/`,{
+    return fetch(`https://carbazar-server.herokuapp.com/make/`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -445,7 +445,7 @@ export const getMake = ()=> {
 };
 
 export const getModel = (make)=> {
-    return fetch(`http://localhost:8080/model?make=${make}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/model?make=${make}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -460,7 +460,7 @@ export const getModel = (make)=> {
 
 
 export const getVariant = (model)=> {
-    return fetch(`http://localhost:8080/variants?model=${model}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/variants?model=${model}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -474,7 +474,7 @@ export const getVariant = (model)=> {
 };
 
 export const save = (userId,  postId, token)=>{
-    return fetch(`http://localhost:8080/savePost/${userId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/savePost/${userId}`,{
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -491,7 +491,7 @@ export const save = (userId,  postId, token)=>{
 };
 
 export const saveBuyer = (userId,  postId, token)=>{
-    return fetch(`http://localhost:8080/saveBuyerPost/${userId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/saveBuyerPost/${userId}`,{
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -508,7 +508,7 @@ export const saveBuyer = (userId,  postId, token)=>{
 };
 
 export const unsave = (userId,  postId, token)=>{
-    return fetch(`http://localhost:8080/unsavePost/${userId}`,{
+    return fetch(`hhttps://carbazar-server.herokuapp.com/unsavePost/${userId}`,{
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -526,7 +526,7 @@ export const unsave = (userId,  postId, token)=>{
 
 
 export const unsaveBuyer = (userId,  postId, token)=>{
-    return fetch(`http://localhost:8080/unsaveBuyerPost/${userId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/unsaveBuyerPost/${userId}`,{
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -543,7 +543,7 @@ export const unsaveBuyer = (userId,  postId, token)=>{
 };
 
 export const reportPost = (user_id, post_id, username, text ,token )=>{
-    return fetch("http://localhost:8080/reportPost",{
+    return fetch("https://carbazar-server.herokuapp.com/reportPost",{
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -561,7 +561,7 @@ export const reportPost = (user_id, post_id, username, text ,token )=>{
 
 export const sendMail = (name, email, subject, message, posterEmail) => {
 
-    return fetch(`${process.env.REACT_APP_API_URL}/contactSeller/`, {
+    return fetch(`https://carbazar-server.herokuapp.com/contactSeller/`, {
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -578,7 +578,7 @@ export const sendMail = (name, email, subject, message, posterEmail) => {
 
 export const findmatches = (post)=>{
 
-    return fetch("http://localhost:8080/b_post/match",{
+    return fetch("https://carbazar-server.herokuapp.com/b_post/match",{
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -594,7 +594,7 @@ export const findmatches = (post)=>{
 
 export const publish = (token, postId) => {
 
-    return fetch(`${process.env.REACT_APP_API_URL}/publishPost/${postId}`, {
+    return fetch(`https://carbazar-server.herokuapp.com/publishPost/${postId}`, {
         method: "PUT",
         headers: {
             Accept: "application/json",

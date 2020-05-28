@@ -1,6 +1,6 @@
 export const read = (userid, token)=> {
     console.log("user id: ", userid);
-    return fetch(`http://localhost:8080/user/${userid}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/user/${userid}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -16,7 +16,7 @@ export const read = (userid, token)=> {
 };
 
 export const list = ()=> {
-    return fetch(`http://localhost:8080/users`,{
+    return fetch(`https://carbazar-server.herokuapp.com/users`,{
         method: "GET"
     })
         .then(res => {
@@ -26,7 +26,7 @@ export const list = ()=> {
 };
 
 export const remove = (userid, token)=> {
-    return fetch(`http://localhost:8080/user/${userid}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/user/${userid}`,{
         method: "DELETE",
         headers: {
             Accept: "application/json",
@@ -43,7 +43,7 @@ export const remove = (userid, token)=> {
 
 export const searchUser = (name, token)=> {
     console.log("searh from method ", name);
-    return fetch(`http://localhost:8080/finduser?q=${encodeURIComponent(name)}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/finduser?q=${encodeURIComponent(name)}`,{
         method: "Get",
         headers: {
             Accept: "application/json",
@@ -60,7 +60,7 @@ export const searchUser = (name, token)=> {
 
 export const update = (userid, token, user)=>{
     console.log("User data:" , user);
-    return fetch(`http://localhost:8080/user/${userid}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/user/${userid}`,{
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -88,7 +88,7 @@ export const updateAuthUser = (user, next) =>{
 };
 
 export const follow = (userid, token, followId)=>{
-    return fetch("http://localhost:8080/user/follow",{
+    return fetch("https://carbazar-server.herokuapp.com/user/follow",{
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -105,7 +105,7 @@ export const follow = (userid, token, followId)=>{
 };
 
 export const Unfollow = (userid, token, UnfollowId)=>{
-    return fetch("http://localhost:8080/user/unfollow",{
+    return fetch("https://carbazar-server.herokuapp.com/user/unfollow",{
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -121,7 +121,7 @@ export const Unfollow = (userid, token, UnfollowId)=>{
 
 
 export const reportUser = (user_id, Reported_user_id, username, text ,token )=>{
-    return fetch("http://localhost:8080/report",{
+    return fetch("https://carbazar-server.herokuapp.com/report",{
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -139,7 +139,7 @@ export const reportUser = (user_id, Reported_user_id, username, text ,token )=>{
 export const findpeople = (userid, token)=>{
     console.log("userid " + userid);
     console.log("userid " + token);
-    return fetch(`http://localhost:8080/user/findpeople/${userid}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/user/findpeople/${userid}`,{
         method: "GET",
         headers: {
             Accept: "application/json",

@@ -1,6 +1,6 @@
 export const sendMessage = (message, sessionid)=>{
     console.log("message:", message);
-    return fetch(`http://localhost:8080/ask/83c5ce1b-e823-4fd0-820b-070278b955bb?make=${message}&sessionid=${sessionid}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/ask/83c5ce1b-e823-4fd0-820b-070278b955bb?make=${message}&sessionid=${sessionid}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -35,7 +35,7 @@ export const getSession = () => {
 
 export const createSession = ()=>{
 
-    return fetch(`http://localhost:8080/sessionId`,{
+    return fetch(`https://carbazar-server.herokuapp.com/sessionId`,{
         method: "GET",
         headers: {
             Accept: "application/json",

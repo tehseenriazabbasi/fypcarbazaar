@@ -1,6 +1,6 @@
 export const signup = (user) => {
 
-    return fetch("http://localhost:8080/signup", {
+    return fetch("https://carbazar-server.herokuapp.com/signup", {
         method : "POST",
         headers: {
             Accept : "application/json",
@@ -16,7 +16,7 @@ export const signup = (user) => {
 
 
 export const signin = (user) => {
-    return fetch("http://localhost:8080/signin", {
+    return fetch("https://carbazar-server.herokuapp.com/signin", {
         method : "POST",
         headers: {
             Accept : "application/json",
@@ -35,7 +35,7 @@ export const signout= (next) => {
         localStorage.removeItem("jwt");
         next();
 
-        return fetch("http://loaclhost:8080/signout",{
+        return fetch("https://carbazar-server.herokuapp.com/signout",{
             method: "GET"
         }).then ((response)=>{
             console.log("Signout" , response)
@@ -68,7 +68,7 @@ export const isAuthenticated = () => {
 };
 
 export const senEmail = (email) => {
-    return fetch(`${process.env.REACT_APP_API_URL}/verification-email/`, {
+    return fetch(`https://carbazar-server.herokuapp.com/verification-email/`, {
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -86,7 +86,7 @@ export const senEmail = (email) => {
 
 export const forgotPassword = email => {
     console.log("email: ", email);
-    return fetch(`${process.env.REACT_APP_API_URL}/forgot-password/`, {
+    return fetch(`https://carbazar-server.herokuapp.com/forgot-password/`, {
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -104,7 +104,7 @@ export const forgotPassword = email => {
 
 
 export const resetPassword = resetInfo => {
-    return fetch(`${process.env.REACT_APP_API_URL}/reset-password/`, {
+    return fetch(`https://carbazar-server.herokuapp.com/reset-password/`, {
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -120,7 +120,7 @@ export const resetPassword = resetInfo => {
 };
 
 export const socialLogin = user => {
-    return fetch(`${process.env.REACT_APP_API_URL}/social-login/`, {
+    return fetch(`https://carbazar-server.herokuapp.com/social-login/`, {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -137,7 +137,7 @@ export const socialLogin = user => {
 };
 
 export const verifyLink = (verifyAccountLink) => {
-    return fetch(`${process.env.REACT_APP_API_URL}/verifyLink/`, {
+    return fetch(`https://carbazar-server.herokuapp.com/verifyLink/`, {
         method: "PUT",
         headers: {
             Accept: "application/json",
