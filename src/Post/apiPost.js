@@ -1,5 +1,5 @@
 export const list = ()=> {
-    return fetch(`http://localhost:8080/posts`,{
+    return fetch(`https://carbazar-server.herokuapp.com/posts`,{
         method: "GET"
     })
         .then(res => {
@@ -9,7 +9,7 @@ export const list = ()=> {
 };
 
 export const list_buyerPosts = ()=> {
-    return fetch(`http://localhost:8080/b_posts`,{
+    return fetch(`https://carbazar-server.herokuapp.com/b_posts`,{
         method: "GET"
     })
         .then(res => {
