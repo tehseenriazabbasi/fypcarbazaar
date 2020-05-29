@@ -224,7 +224,7 @@ export const enablePost = (postid, token)=>{
 
 export const warnUser = (email, postname) => {
     console.log("email: ", email);
-    return fetch(`${process.env.REACT_APP_API_URL}/warn-user/`, {
+    return fetch(`https://carbazar-server.herokuapp.com/warn-user/`, {
         method: "PUT",
         headers: {
             Accept: "application/json",

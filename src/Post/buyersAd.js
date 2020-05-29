@@ -557,7 +557,7 @@ class buyersAd extends Component {
                                         onChange={this.handleChange("model")}
                                     >
                                         <MenuItem value={""} disabled={true} selected={true}>First select make</MenuItem>
-                                        {this.state.modelfound.map((model)=> <MenuItem value={model.model}>{model.model}</MenuItem>)}
+                                        {this.state.modelfound.map((model)=> <MenuItem value={model._id}>{model._id}</MenuItem>)}
                                     </Select>
 
 

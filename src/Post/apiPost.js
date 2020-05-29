@@ -508,7 +508,7 @@ export const saveBuyer = (userId,  postId, token)=>{
 };
 
 export const unsave = (userId,  postId, token)=>{
-    return fetch(`hhttps://carbazar-server.herokuapp.com/unsavePost/${userId}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/unsavePost/${userId}`,{
         method: "PUT",
         headers: {
             Accept: "application/json",
