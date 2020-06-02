@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15a29b6d-a212-4371-94c1-731a08a4e254" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Post/NewPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Post/NewPost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Post/apiPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Post/apiPost.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,21 +16,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Post/savePost.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Post/Posts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9894">
+            <state relative-caret-position="410">
               <caret line="617" column="85" selection-start-line="617" selection-start-column="85" selection-end-line="617" selection-end-column="85" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -44,10 +28,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Post/apiPost.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/user/Profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="142" column="47" lean-forward="true" selection-start-line="142" selection-start-column="47" selection-end-line="142" selection-end-column="48" />
+            <state relative-caret-position="470">
+              <caret line="140" column="22" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="22" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -207,11 +200,11 @@
         <option value="$PROJECT_DIR$/src/contatcUs/contactApi.js" />
         <option value="$PROJECT_DIR$/src/chatbot/apiChatbot.js" />
         <option value="$PROJECT_DIR$/src/auth/index.js" />
-        <option value="$PROJECT_DIR$/src/Post/apiPost.js" />
         <option value="$PROJECT_DIR$/src/admin/apiReport.js" />
         <option value="$PROJECT_DIR$/src/Post/buyersAd.js" />
         <option value="$PROJECT_DIR$/src/Post/NewPost.js" />
         <option value="$PROJECT_DIR$/src/user/Profile.js" />
+        <option value="$PROJECT_DIR$/src/Post/apiPost.js" />
       </list>
     </option>
   </component>
@@ -238,6 +231,12 @@
               <item name="projectapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="projectapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="projectapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="projectapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Post" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="projectapp" type="b2602c69:ProjectViewProjectNode" />
@@ -492,12 +491,12 @@
       <workItem from="1590920762071" duration="1175000" />
       <workItem from="1591012296805" duration="910000" />
       <workItem from="1591023273951" duration="1616000" />
-      <workItem from="1591099928046" duration="646000" />
+      <workItem from="1591099928046" duration="1778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="906204000" />
+    <option name="totallyTimeSpent" value="907336000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -526,7 +525,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5014881" side_tool="true" weight="0.24071082" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4985119" visible="true" weight="0.048465267" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4985119" visible="true" weight="0.2003231" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32956383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -961,13 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Post/apiPost.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8670">
-          <caret line="510" column="18" selection-start-line="510" selection-start-column="18" selection-end-line="510" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Post/unsavePost.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -984,16 +976,6 @@
           <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Post/Posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9894">
-          <caret line="617" column="85" selection-start-line="617" selection-start-column="85" selection-end-line="617" selection-end-column="85" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1058,11 +1040,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/user/Profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="142" column="47" lean-forward="true" selection-start-line="142" selection-start-column="47" selection-end-line="142" selection-end-column="48" />
+        <state relative-caret-position="470">
+          <caret line="140" column="22" selection-start-line="140" selection-start-column="14" selection-end-line="140" selection-end-column="22" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Post/Posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="617" column="85" selection-start-line="617" selection-start-column="85" selection-end-line="617" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Post/apiPost.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
         </state>
       </provider>
     </entry>

@@ -30,7 +30,7 @@ export const listolx = ()=> {
 
 
 export const listolxhome = ()=> {
-    return fetch(`https://carbazar-scrapper.herokuapp.com/`,{
+    return fetch(`https://carbazar-scrapper.herokuapp.com/olxhome`,{
         method: "GET"
     })
         .then(res => {
