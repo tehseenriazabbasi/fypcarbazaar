@@ -17,6 +17,8 @@ import { MDBInput } from 'mdbreact';
 import MenuItem from '@material-ui/core/MenuItem';
 import Verify from "../core/verify";
 import Verifyadmin from "../core/adminVerify";
+
+
 const styles = makeStyles(theme => ({
     '@global': {
         body: {
@@ -67,7 +69,8 @@ class NewPost extends Component {
             fileSize : 0,
             loading : false,
             redirectToProfile: false,
-            result: ""
+            result: "",
+
         }
     }
 
@@ -78,11 +81,8 @@ class NewPost extends Component {
 
         const value = name === 'video' ? event.target.files : event.target.value;
 
-
-
-
         this.postData.set(name, value);
-        this.setState({ [name]:  value});
+        this.setState({[name]: value});
 
 
     };

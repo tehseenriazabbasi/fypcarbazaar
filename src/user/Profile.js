@@ -137,7 +137,8 @@ class Profile extends Component {
     render() {
 
         const {posts} = this.state;
-        const photourl = this.state.user._id? "https://carbazar-server.herokuapp.com/user/photo/"+this.state.user._id+"?"+new Date().getTime() : `${User_Avatar}`;
+        //const photourl = this.state.user._id? "https://carbazar-server.herokuapp.com/user/photo/"+this.state.user._id+"?"+new Date().getTime() : `${User_Avatar}`;
+        const photourl = this.state.user._id? this.state.user.photo : `${User_Avatar}`;
 
         const red = this.state.redirectToSignin;
         if(red){
