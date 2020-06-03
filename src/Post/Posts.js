@@ -34,6 +34,7 @@ import Carousel from "react-bootstrap/Carousel";
 import slider1 from "../images/CAR BAZAAR.png";
 import slider2 from "../images/CAR BAZAAR (1).png";
 import slider3 from "../images/CAR BAZAAR (2).png";
+import ReactPaginate from 'react-paginate';
 
 
 const override = css`
@@ -48,11 +49,30 @@ class Posts extends Component {
         super();
         this.state= {
             posts: [],
+            postData: [],
+            offset: 0,
+            perPage: 3,
+            currentPage: 0,
+            pageCount: 0,
             b_posts: [],
             olxposts: [],
             olxhomeposts: [],
+            olxoffset: 0,
+            olxperPage: 3,
+            olxcurrentPage: 0,
+
             pkwhomeposts:[],
+            pkwoffset: 0,
+            pkwperPage: 3,
+            pkwcurrentPage: 0,
+
+
+
             pkmhomeposts:[],
+            pkmoffset: 0,
+            pkmperPage: 3,
+            pkmcurrentPage: 0,
+
             saved:[],
             search: "",
             searchResultsolx:[],
@@ -306,8 +326,138 @@ class Posts extends Component {
 
     };
 
+    handlePageClick = (e) => {
+        const selectedPage = e.selected;
+        const offset = selectedPage * this.state.perPage;
+
+        this.setState({
+            currentPage: selectedPage,
+            offset: offset
+        }, () => {
+            this.receivedData()
+        });
+
+    };
+
+    pkwhandlePageClick = (e) => {
+        const selectedPage = e.selected;
+        const offset = selectedPage * this.state.pkwperPage;
+
+        this.setState({
+            pkwcurrentPage: selectedPage,
+            pkwoffset: offset
+        }, () => {
+            this.pkwreceivedData();
+        });
+
+    };
+    olxhandlePageClick = (e) => {
+        const selectedPage = e.selected;
+        const offset = selectedPage * this.state.olxperPage;
+
+        this.setState({
+            olxcurrentPage: selectedPage,
+            olxoffset: offset
+        }, () => {
+            this.olxreceivedData();
+        });
+
+    };
+
+    pkmhandlePageClick = (e) => {
+        const selectedPage = e.selected;
+        const offset = selectedPage * this.state.pkmperPage;
+
+        this.setState({
+            pkmcurrentPage: selectedPage,
+            pkmoffset: offset
+        }, () => {
+            this.pkmreceivedData();
+        });
+
+    };
 
 
+
+    receivedData() {
+        list().then(data=> {
+            if(data.error){
+                console.log(data.error);
+            }
+            else {
+                this.setState({posts: data});
+                this.setState({
+                    pageCount: Math.ceil(data.length / this.state.perPage),
+
+                })
+
+                this.setState({loading: false});
+            }
+        })
+
+    }
+
+
+    pkwreceivedData() {
+        listPKWhome().then(data =>{
+
+            if(data.error){
+                console.log(data.error);
+            }
+            else {
+                this.setState({pkwhomeposts: data});
+                this.setState({
+                    pkwpageCount: Math.ceil(32  / this.state.pkwperPage),
+
+                });
+
+                this.setState({loadingpkw: false});
+
+
+            }
+        });
+
+    }
+
+
+    olxreceivedData() {
+        listolxhome().then(data =>{
+
+            if(data.error){
+                console.log(data.error);
+            }
+            else {
+                this.setState({olxhomeposts: data});
+                this.setState({
+                    olxpageCount: Math.ceil(20  / this.state.olxperPage),
+
+                });
+                this.setState({loadingolx: false});
+
+            }
+        });
+
+    }
+
+
+    pkmreceivedData() {
+        listPKMhome().then(data =>{
+
+            if(data.error){
+                console.log(data.error);
+            }
+            else {
+                this.setState({pkmhomeposts: data});
+                this.setState({
+                    pkmpageCount: Math.ceil(9 / this.state.pkmperPage),
+
+                });
+                this.setState({loadingpkm: false});
+
+            }
+        });
+
+    }
 
     componentDidMount() {
         console.log("local", localStorage.getItem("jwt"));
@@ -329,54 +479,13 @@ class Posts extends Component {
             }
         });
 
-        list().then(data =>{
-            if(data.error){
-                console.log(data.error);
-            }
-            else {
-                this.setState({posts: data});
-                this.setState({loading: false});
-            }
-        });
+        this.receivedData();
 
+       this.olxreceivedData();
 
+        this.pkwreceivedData();
 
-        listolxhome().then(data =>{
-
-            if(data.error){
-                console.log(data.error);
-            }
-            else {
-                this.setState({olxhomeposts: data});
-                this.setState({loadingolx: false});
-
-            }
-        });
-
-        listPKWhome().then(data =>{
-
-            if(data.error){
-                console.log(data.error);
-            }
-            else {
-                this.setState({pkwhomeposts: data});
-                this.setState({loadingpkw: false});
-
-
-            }
-        });
-
-        listPKMhome().then(data =>{
-
-            if(data.error){
-                console.log(data.error);
-            }
-            else {
-                this.setState({pkmhomeposts: data});
-                this.setState({loadingpkm: false});
-
-            }
-        });
+        this.pkmreceivedData();
     }
 
 
@@ -400,7 +509,7 @@ class Posts extends Component {
                         </div>
                     )}
                     <div className="row">
-                        {posts.map((post,i)=>{
+                        {posts.slice(this.state.offset, this.state.offset + this.state.perPage).map((post,i)=>{
 
                             const posterId = post.postedBy? post.postedBy._id : "";
                             const posterName = post.postedBy? post.postedBy.name : "";
@@ -566,18 +675,9 @@ class Posts extends Component {
                                                 </div>
                                             </div>
 
-
-
-
-
-
                                         </div>
 
                                     </a>
-
-
-
-
 
                                 </div>
                             )
@@ -684,7 +784,7 @@ class Posts extends Component {
                         </div>
                     )}
                     <div className="card-columns">
-                    {posts.slice(0,3).map((post,i)=>{
+                    {posts.slice(this.state.olxoffset, this.state.olxoffset + this.state.olxperPage).map((post,i)=>{
                         return (
                             <a  className="card card-post"  key={i} href={post[1][0].Link}  target={
                                 "_blank"}>
@@ -735,7 +835,7 @@ class Posts extends Component {
                         </div>
                     )}
                     <div className="card-columns">
-                        {posts.slice(0,3).map((post,i)=>{
+                        {posts.slice(this.state.pkwoffset, this.state.pkwoffset + this.state.pkwperPage).map((post,i)=>{
                             return (
                                 <a className="card card-post"  key={i} href={post[1].link} target={
                                     "_blank"}>
@@ -787,7 +887,7 @@ class Posts extends Component {
                     )}
 
                     <div className="card-columns">
-                        {posts.slice(0,3).map((post,i)=>{
+                        {posts.slice(this.state.pkmoffset, this.state.pkmoffset + this.state.pkmperPage).map((post,i)=>{
                             return (
                                 <a className="card card-post"  key={i} href={post[1].link} target={
                                     "_blank"}>
@@ -2456,11 +2556,71 @@ class Posts extends Component {
 
                                 <div className={"clearfix"}></div>
                                 {this.renderCarBazaarhome(cbposts, saved)}
+                                <div >
+                                    <ReactPaginate
+                                        previousLabel={"prev"}
+                                        nextLabel={"next"}
+                                        breakLabel={"..."}
+                                        breakClassName={"break-me"}
+                                        pageCount={this.state.pageCount}
+                                        marginPagesDisplayed={2}
+                                        pageRangeDisplayed={5}
+                                        onPageChange={this.handlePageClick}
+                                        containerClassName={"pagination"}
+                                        subContainerClassName={"pages pagination"}
+                                        activeClassName={"active"}/>
+                                </div>
+
+
                                 {this.renderCarBazaardealers(cbpostsdealers, saved)}
                                 {this.renderOlxPosts(olxhome)}
+                                <div >
+                                    <ReactPaginate
+                                        previousLabel={"prev"}
+                                        nextLabel={"next"}
+                                        breakLabel={"..."}
+                                        breakClassName={"break-me"}
+                                        pageCount={this.state.olxpageCount}
+                                        marginPagesDisplayed={2}
+                                        pageRangeDisplayed={5}
+                                        onPageChange={this.olxhandlePageClick}
+                                        containerClassName={"pagination"}
+                                        subContainerClassName={"pages pagination"}
+                                        activeClassName={"active"}/>
+                                </div>
+
+
                                 {this.renderPKWhomePosts(pkhome)}
+                                <div >
+                                    <ReactPaginate
+                                        previousLabel={"prev"}
+                                        nextLabel={"next"}
+                                        breakLabel={"..."}
+                                        breakClassName={"break-me"}
+                                        pageCount={this.state.pkwpageCount}
+                                        marginPagesDisplayed={2}
+                                        pageRangeDisplayed={5}
+                                        onPageChange={this.pkwhandlePageClick}
+                                        containerClassName={"pagination"}
+                                        subContainerClassName={"pages pagination"}
+                                        activeClassName={"active"}/>
+                                </div>
                                 {this.renderPKMhomePosts(pkmhome)}
 
+                                <div >
+                                    <ReactPaginate
+                                        previousLabel={"prev"}
+                                        nextLabel={"next"}
+                                        breakLabel={"..."}
+                                        breakClassName={"break-me"}
+                                        pageCount={this.state.pkmpageCount}
+                                        marginPagesDisplayed={2}
+                                        pageRangeDisplayed={5}
+                                        onPageChange={this.pkmhandlePageClick}
+                                        containerClassName={"pagination"}
+                                        subContainerClassName={"pages pagination"}
+                                        activeClassName={"active"}/>
+                                </div>
                             </div>
                         </div>
 
