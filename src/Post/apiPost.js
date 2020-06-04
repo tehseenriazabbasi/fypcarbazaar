@@ -130,7 +130,7 @@ export const searchOlxFilters = (make, model , kmd , et, min, max, regC, yearfro
     console.log("yaerfrom: ", yearfrom);
     console.log("yaerto: ", yearto);
 
-    return fetch(`http://localhost:5000/olxFilters?make=${make}&KMDriven=${kmd}&engineType=${et}&price=${min}-${max}&regCity=${regC}&year=${yearfrom}-${yearto}&color=${color}&transmission=${trans}&condition=${cond}`,{
+    return fetch(`https://carbazar-scrapper.herokuapp.com/olxFilters?make=${make}&KMDriven=${kmd}&engineType=${et}&price=${min}-${max}&regCity=${regC}&year=${yearfrom}-${yearto}&color=${color}&transmission=${trans}&condition=${cond}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -147,7 +147,7 @@ export const searchPKWFilters = (make, model , kmd , et, min, max, regC, yearfro
     console.log("yaerfrom: ", yearfrom);
     console.log("yaerto: ", yearto);
 
-    return fetch(`http://localhost:5000/pakWheelsFilters?make=${make}&KMDriven=${kmd}&engineType=${et}&price=${min}-${max}&regCity=${regC}&year=${yearfrom}-${yearto}&model=${model}&location=${location}&color=${color}&transmission=${trans}&condition=${cond}`,{
+    return fetch(`https://carbazar-scrapper.herokuapp.com/pakWheelsFilters?make=${make}&KMDriven=${kmd}&engineType=${et}&price=${min}-${max}&regCity=${regC}&year=${yearfrom}-${yearto}&model=${model}&location=${location}&color=${color}&transmission=${trans}&condition=${cond}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -166,7 +166,7 @@ export const searchPKMFilters = (make, model , kmd , et, min, max, regC, yearfro
     console.log("yaerfrom: ", yearfrom);
     console.log("yaerto: ", yearto);
 
-    return fetch(`http://localhost:5000/pkMotorsFilters?make=${make}&KMDriven=${kmd}&engineType=${et}&price=${min}-${max}&regCity=${regC}&year=${yearfrom}-${yearto}&model=${model}&location=${location}&color=${color}&transmission=${trans}&condition=${cond}`,{
+    return fetch(`https://carbazar-scrapper.herokuapp.com/pkMotorsFilters?make=${make}&KMDriven=${kmd}&engineType=${et}&price=${min}-${max}&regCity=${regC}&year=${yearfrom}-${yearto}&model=${model}&location=${location}&color=${color}&transmission=${trans}&condition=${cond}`,{
         method: "GET",
         headers: {
             Accept: "application/json",
