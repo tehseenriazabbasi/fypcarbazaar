@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="15a29b6d-a212-4371-94c1-731a08a4e254" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Post/apiPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Post/apiPost.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,7 +39,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Post/apiPost.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="1365">
               <caret line="208" column="5" lean-forward="true" selection-start-line="208" selection-start-column="5" selection-end-line="208" selection-end-column="5" />
             </state>
           </provider>
@@ -491,12 +490,12 @@
       <workItem from="1591023273951" duration="1616000" />
       <workItem from="1591099928046" duration="2410000" />
       <workItem from="1591179294302" duration="9666000" />
-      <workItem from="1591288421128" duration="65000" />
+      <workItem from="1591288421128" duration="789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="917699000" />
+    <option name="totallyTimeSpent" value="918423000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,9 +508,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4985507" visible="true" weight="0.25223213" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4985507" visible="true" weight="0.25223213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.5014493" side_tool="true" weight="0.1688988" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -525,7 +523,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5014881" side_tool="true" weight="0.24071082" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4985119" visible="true" weight="0.44264942" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4985119" visible="true" weight="0.048465267" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32956383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1057,7 +1055,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Post/apiPost.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="1365">
           <caret line="208" column="5" lean-forward="true" selection-start-line="208" selection-start-column="5" selection-end-line="208" selection-end-column="5" />
         </state>
       </provider>
