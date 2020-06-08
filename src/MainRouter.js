@@ -43,6 +43,7 @@ import dealer_details from  "./admin/dealer_details"
 import SingleBuyerPost from "./Post/SingleBuyerPost"
 import reviews from "./review/review"
 import newReview from "./review/newReview"
+import Recommender from "./recommender/Recommender"
 const MainRouter = () => (
   <div>
     <Menu/>
@@ -51,6 +52,7 @@ const MainRouter = () => (
             {/*review routes*/}
             <Route  path="/car/review" component={reviews} />
             <Route  path="/car/new_review" component={newReview} />
+            <Route  path="/car/recommendations" component={Recommender} />
 
             <Route  path="/contact-us" component={contactUs} />
             <Route  path="/scroll" component={scroll} />

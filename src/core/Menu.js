@@ -89,9 +89,11 @@ const Menu = ({history}) =>(
                                             <i className="fa fa-comments mr-2"></i> Reviews </Link>
                                     </li>
 
-                                    {/*<li className="nav-item">
-                                        <Link className="nav-link" style =  {isActive(history, "/post/create_buyer")} to={"/post/create_buyer"}>Buyer Ad </Link>
-                                    </li>*/}
+                                    <li className="nav-item">
+                                        <Link className="nav-link" style =  {isActive(history, "/car/recommendations")} to={"/car/recommendations"}>
+                                            <i className="fa fa-thumbs-up mr-2"></i> Car Recommendations </Link>
+                                    </li>
+
                                 </div>
                             </li>
 
