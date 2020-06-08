@@ -1,6 +1,6 @@
 export const bestmodel = ()=>{
 
-    return fetch(`http://localhost:8080/recommendCar`,{
+    return fetch(`https://carbazar-server.herokuapp.com/recommendCar`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -16,7 +16,7 @@ export const bestmodel = ()=>{
 
 export const bestbrand = ()=>{
 
-    return fetch(`http://localhost:8080/recommendCarBrand`,{
+    return fetch(`https://carbazar-server.herokuapp.com/recommendCarBrand`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -33,7 +33,7 @@ export const bestbrand = ()=>{
 
 export const bestMileage = ()=>{
 
-    return fetch(`http://localhost:8080/recommendCarMileage`,{
+    return fetch(`https://carbazar-server.herokuapp.com/recommendCarMileage`,{
         method: "GET",
         headers: {
             Accept: "application/json",
@@ -49,7 +49,7 @@ export const bestMileage = ()=>{
 
 export const bestPrice = (min, max)=>{
     console.log(min)
-    return fetch(`http://localhost:8080/recommendCarPrice`,{
+    return fetch(`https://carbazar-server.herokuapp.com/recommendCarPrice`,{
         method: "POST",
         headers: {
             Accept: "application/json",
