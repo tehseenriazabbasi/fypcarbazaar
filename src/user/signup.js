@@ -9,6 +9,8 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import PropTypes from 'prop-types';
 import { makeStyles, withStyles} from '@material-ui/core/styles';
+import { CometChat } from "@cometchat-pro/chat"
+
 
 const styles = makeStyles(theme => ({
   '@global': {
@@ -76,6 +78,25 @@ class Signup extends Component {
             if(data.error)
               this.setState({error: data.error});
             else {
+              var res = this.state.email.split("@");
+
+              let apiKey = "bf1f50b5457054f1a007d0f195b39faf3f4611ca";
+              var uid = res[0];
+              var name = this.state.name;
+
+              var user = new CometChat.User(uid);
+
+              user.setName(name);
+
+              CometChat.createUser(user, apiKey).then(
+                  user => {
+                    console.log("user created", user);
+                  },error => {
+                    console.log("error", error);
+                  }
+              )
+
+
               this.setState({
                 error: "",
                 fname : "",
@@ -99,7 +120,7 @@ class Signup extends Component {
     }
   })*/
 
-};
+  };
 
   render() {
     const { error, open } = this.state;
@@ -214,9 +235,9 @@ class Signup extends Component {
               />
 
 
-                <button style={{width:'100%', 'margin-top': '4px' , 'margin-bottom':'4px' }} className="btn btn-raised btn-danger" onClick={this.clickSubmit}>
-                  Signup
-                </button>
+              <button style={{width:'100%', 'margin-top': '4px' , 'margin-bottom':'4px' }} className="btn btn-raised btn-danger" onClick={this.clickSubmit}>
+                Signup
+              </button>
 
             </form>
           </div>
@@ -231,177 +252,3 @@ Signup.propTypes = {
 
 export default withStyles(styles)(Signup);
 
-
-
-/*
-import React, { Component } from "react";
-import  {signup, senEmail} from "../auth";
-
-class Signup extends Component {
-  constructor() {
-    super();
-    this.state = {
-      fname: "",
-      lname: "",
-      email: "",
-      password: "",
-      confirmPassword: "",
-      phone: "",
-      error: "",
-      open: false
-    };
-  }
-
-  handleChange = (name) => event => {
-    this.setState({ error: "" });
-    this.setState({ [name]: event.target.value });
-  };
-
-  clickSubmit = event => {
-    event.preventDefault();
-
-
-    const { fname, lname, email, password, phone } = this.state;
-    const name = this.state.fname+ " "+ this.state.lname;
-    const user = {
-      name,
-      email,
-      password,
-      phone
-    };
-    console.log(user);
-    if(this.state.password != this.state.confirmPassword){
-      this.setState({error: "passwords fields doesnot mismatch"})
-    }
-    else {
-      signup(user)
-          .then(data=> {
-            if(data.error)
-              this.setState({error: data.error});
-            else {
-              this.setState({
-                error: "",
-                fname : "",
-                lname: "",
-                email: "",
-                phone: "",
-                password: "",
-                confirmPassword : "",
-                open: true
-              })
-            }
-          });
-    };
-
-/!*    senEmail(user).then(data =>{
-      if(data.error){
-        console.log("Error");
-      }
-      else {
-        console.log("Sent");
-      }
-    })*!/
-
-    };
-
-
-  render() {
-    const { fname, lname,email, password, confirmPassword, phone, error, open } = this.state;
-    return (
-      <div className="container">
-        <h2 className="mt-5 mb-5">Signup here</h2>
-
-        <div
-          className="alert alert-danger"
-          style={{ display: error ? "" : "none" }}
-        >
-          {error}
-        </div>
-
-        <div
-          className="alert alert-info"
-          style={{ display: open ? "" : "none" }}
-        >
-          New account is successfully created. Please sign In.
-          {error}
-        </div>
-
-        <form>
-          <div className="form-group">
-            <label className="text-muted">First Name</label>
-            <input
-              value={fname}
-              className="form-control"
-              type="text"
-              onChange={this.handleChange("fname")}
-            />
-          </div>
-
-
-          <div className="form-group">
-            <label className="text-muted">Last Name</label>
-            <input
-                value={lname}
-                className="form-control"
-                type="text"
-                onChange={this.handleChange("lname")}
-            />
-          </div>
-
-          <div className="form-group">
-            <label className="text-muted">Email</label>
-            <input
-              value={email}
-              className="form-control"
-              type="email"
-              onChange={this.handleChange("email")}
-            />
-          </div>
-
-          <div className="form-group">
-            <label className="text-muted">Phone</label>
-            <input
-                value={phone}
-                className="form-control"
-                type="tel"
-                required={true}
-                onChange={this.handleChange("phone")}
-            />
-          </div>
-
-          <div className="form-group">
-            <label className="text-muted">Password </label>
-            <input
-              value={password}
-              className="form-control"
-              type="password"
-              onChange={this.handleChange("password")}
-            />
-          </div>
-          <div className="form-group">
-            <label className="text-muted">Confirm Password </label>
-            <input
-                value={confirmPassword}
-                className="form-control"
-                type="password"
-                onChange={this.handleChange("confirmPassword")}
-            />
-          </div>
-
-
-
-          <div className="form-group">
-            <button
-              onClick={this.clickSubmit}
-              className="btn btn-raised btn-primary"
-            >
-              Submit{" "}
-            </button>
-          </div>
-        </form>
-      </div>
-    );
-  }
-}
-export default Signup;
-*/

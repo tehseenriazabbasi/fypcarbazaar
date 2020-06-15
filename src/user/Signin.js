@@ -15,6 +15,8 @@ import {signin, authenticate} from "../auth";
 import SocialLogin from "./SocialLogin";
 import PropTypes from 'prop-types';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { CometChat } from "@cometchat-pro/chat"
+
 
 const styles = makeStyles(theme => ({
   '@global': {
@@ -74,6 +76,19 @@ class SignIn extends React.Component {
         authenticate(data, ()=>{
           this.setState({redirectToReferer: true});
         })
+        var res = this.state.email.split("@");
+
+        var UID = res[0].toLowerCase();
+        var apiKey = "bf1f50b5457054f1a007d0f195b39faf3f4611ca";
+
+        CometChat.login(UID, apiKey).then(
+            user => {
+              console.log("Login Successful:", { user });
+            },
+            error => {
+              console.log("Login failed with exception:", { error });
+            }
+        );
       }
     })
   };
@@ -88,7 +103,7 @@ class SignIn extends React.Component {
     return (
 
         <Container component="main" maxWidth="xs">
-        <CssBaseline />
+          <CssBaseline />
 
           <div
               className="alert alert-danger"
@@ -97,78 +112,78 @@ class SignIn extends React.Component {
             {error}
           </div>
 
-        <div className={classes.paper}>
+          <div className={classes.paper}>
 
-          <div className={"row mt-4 mb-4"}>
-            <div className={"col-md-4"}>
+            <div className={"row mt-4 mb-4"}>
+              <div className={"col-md-4"}>
+
+              </div>
+              <div className={"col-md-2"}>
+                <Avatar style={{'margin-left': '20px'}} className={classes.avatar}>
+                  <LockOutlinedIcon />
+                </Avatar>
+
+                <Typography  className={"ml-2"} component="h1" variant="h5">
+                  Signin
+                </Typography>
+              </div>
+              <div className={"col-md-5"}>
+
+              </div>
 
             </div>
-            <div className={"col-md-2"}>
-              <Avatar style={{'margin-left': '20px'}} className={classes.avatar}>
-                <LockOutlinedIcon />
-              </Avatar>
-
-              <Typography  className={"ml-2"} component="h1" variant="h5">
+            <form className={classes.form} noValidate>
+              <TextField
+                  variant="outlined"
+                  margin="normal"
+                  required
+                  fullWidth
+                  id="email"
+                  label="Email Address"
+                  name="email"
+                  autoComplete="email"
+                  autoFocus
+                  onChange={this.handleChange("email")}
+              />
+              <TextField
+                  variant="outlined"
+                  margin="normal"
+                  required
+                  fullWidth
+                  name="password"
+                  label="Password"
+                  type="password"
+                  id="password"
+                  autoComplete="current-password"
+                  onChange={this.handleChange("password")}
+              />
+              <FormControlLabel
+                  control={<Checkbox value="remember" color="primary" />}
+                  label="Remember me"
+              />
+              <button style={{width:'100%', 'margin-top': '4px' , 'margin-bottom':'4px' }} className="btn btn-raised btn-danger" onClick={this.clickSubmit}>
                 Signin
-              </Typography>
-            </div>
-            <div className={"col-md-5"}>
+              </button>
 
+              <Grid container className={"mt-2"}>
+                <Grid item xs>
+                  <Link href="/forgot-password" variant="body2">
+                    Forgot password?
+                  </Link>
+                </Grid>
+                <Grid item>
+                  <Link href="/signup" variant="body2">
+                    {"Don't have an account? Sign Up"}
+                  </Link>
+                </Grid>
+              </Grid>
+            </form>
+            <div className={"mt-2"}>
+              <SocialLogin />
             </div>
 
           </div>
-          <form className={classes.form} noValidate>
-            <TextField
-                variant="outlined"
-                margin="normal"
-                required
-                fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
-                autoFocus
-                onChange={this.handleChange("email")}
-            />
-            <TextField
-                variant="outlined"
-                margin="normal"
-                required
-                fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="password"
-                autoComplete="current-password"
-                onChange={this.handleChange("password")}
-            />
-            <FormControlLabel
-                control={<Checkbox value="remember" color="primary" />}
-                label="Remember me"
-            />
-            <button style={{width:'100%', 'margin-top': '4px' , 'margin-bottom':'4px' }} className="btn btn-raised btn-danger" onClick={this.clickSubmit}>
-              Signin
-            </button>
-
-            <Grid container className={"mt-2"}>
-              <Grid item xs>
-                <Link href="/forgot-password" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
-              <Grid item>
-                <Link href="/signup" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
-              </Grid>
-            </Grid>
-          </form>
-          <div className={"mt-2"}>
-            <SocialLogin />
-          </div>
-
-        </div>
-      </Container>
+        </Container>
     );
   }
 }

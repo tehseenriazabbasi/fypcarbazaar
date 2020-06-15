@@ -130,6 +130,15 @@ const Menu = ({history}) =>(
                                                 </Link>
                                             </li>
                                             <li className="nav-item">
+                                                <Link className="nav-link" to={`/inbox`}
+                                                      style = {isActive(history, `/inbox`)}>
+                                                    <i className="fa fa-inbox mr-1" aria-hidden="true"></i>
+
+                                                    {`Inbox`}
+                                                </Link>
+                                            </li>
+
+                                            <li className="nav-item">
                                                 <Link className="nav-link"
                                                       onClick={()=>signout(()=> history.push("/"))}>
                                                     <i className="fa fa-sign-out mr-1" aria-hidden="true"></i>
@@ -151,7 +160,7 @@ const Menu = ({history}) =>(
                                             <li className="nav-item">
                                                 <Link className="nav-link" style = {isActive(history, "/signin")} to={"/signin"}>
                                                     <i className="fa fa-sign-in" aria-hidden="true"></i>
-                                                      Signin </Link>
+                                                    Signin </Link>
                                             </li>
                                             <li className="nav-item">
                                                 <Link className="nav-link" style = {isActive(history, "/signup")}to={"/signup"}>

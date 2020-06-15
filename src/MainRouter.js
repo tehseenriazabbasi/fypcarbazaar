@@ -44,12 +44,57 @@ import SingleBuyerPost from "./Post/SingleBuyerPost"
 import reviews from "./review/review"
 import newReview from "./review/newReview"
 import Recommender from "./recommender/Recommender"
+
+import {
+    CometChatConversationList,
+    CometChatUserList,
+    CometChatUnified,
+    CometChatGroupList,
+    CometChatUserListScreen,
+    CometChatConversationListScreen,
+    CometChatGroupListScreen
+} from './lib/CometChat';
+import KitchenSinkApp from './defaultPages/KitchenSinkApp'
+import HomePage from './defaultPages/HomePage';
+import AllComponents from './defaultPages/AllComponents';
+
+
 const MainRouter = () => (
-  <div>
-    <Menu/>
+    <div>
+        <Menu/>
         <Switch>
 
-            {/*review routes*/}
+
+
+            <Route path="/login">
+                <KitchenSinkApp></KitchenSinkApp>
+            </Route>
+            <Route path="/inbox">
+                <CometChatUnified></CometChatUnified>
+            </Route>
+            <Route path="/contact-list">
+                <CometChatUserList></CometChatUserList>
+            </Route>
+            <Route path="/group-list">
+                <CometChatGroupList></CometChatGroupList>
+            </Route>
+            <Route path="/conversations-list">
+                <CometChatConversationList></CometChatConversationList>
+            </Route>
+            <Route path="/contact-screen">
+                <CometChatUserListScreen></CometChatUserListScreen>
+            </Route>
+            <Route path="/conversation-screen">
+                <CometChatConversationListScreen></CometChatConversationListScreen>
+            </Route>
+            <Route path="/group-screen">
+                <CometChatGroupListScreen></CometChatGroupListScreen>
+            </Route>
+            <Route path="/components">
+                <AllComponents></AllComponents>
+            </Route>
+
+
             <Route  path="/car/review" component={reviews} />
             <Route  path="/car/new_review" component={newReview} />
             <Route  path="/car/recommendations" component={Recommender} />
@@ -96,8 +141,8 @@ const MainRouter = () => (
             <PrivateRoute exact path="/pendingUsers" component={pending} />
             <Route  path="/" component={Home} />
         </Switch>
-      <Footer/>
-  </div>
+        <Footer/>
+    </div>
 );
 
 export default MainRouter;
