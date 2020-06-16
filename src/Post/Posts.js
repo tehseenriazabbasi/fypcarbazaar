@@ -531,7 +531,7 @@ class Posts extends Component {
                                         <a style={{height: '408px'}} className="card card-post mt-2"  key={i} href={`/post/${post[1]._id}`} target={
                                             "_blank"}>
 
-                                            <div className="card-body" style={{"border-left": "5px solid yellow"}}>
+                                            <div className="card-body card-post" style={{"border-left": "5px solid yellow"}}>
 
                                                 <div style={{"text-align": "center"}}>
                                                     <img className={"card-img-top mx-auto"} src={post[1].photo[0]} alt={post.title} style={{
@@ -545,10 +545,10 @@ class Posts extends Component {
                                                 <div className={"row"}>
                                                     <div className={"col-md-10 mt-2"}>
                                                         <h5 className="card-title font-weight-bold mb-0">{"Rs "+post[1].price}</h5>
-                                                        <p className="card-text text-muted">  {post[1].title}</p>
+                                                        <p className="card-text">  {post[1].title}</p>
                                                         <p className="card-text mb-0"> {post[1].make + " " + post[1].model+ " "+ post[1].registration_city + " " +  post[1].registration_year}</p>
                                                         <p className="card-text mb-0"> {post[1].mileage  + "Kms " + post[1].engine_capacity+ " "+ post[1].engine_type}</p>
-                                                        <p className="card-text text-muted"> {post[1].city}</p>
+                                                        <p className="card-text "> {post[1].city}</p>
                                                     </div>
 
                                                     <div className={"col-md-2 mt-2"}>
@@ -636,7 +636,7 @@ class Posts extends Component {
                                     <a style={{height: '408px'}} className="card card-post mt-2"  key={i} href={`/post/${post[1]._id}`} target={
                                         "_blank"}>
 
-                                        <div className="card-body" style={{"border-left": "5px solid yellow"}}>
+                                        <div className="card-body card-post" style={{"border-left": "5px solid yellow"}}>
 
                                             <div style={{"text-align": "center"}}>
                                                 <img className={"card-img-top mx-auto"} src={post[1].photo[0]} alt={post.title} style={{
@@ -650,10 +650,10 @@ class Posts extends Component {
                                             <div className={"row"}>
                                                 <div className={"col-md-10 mt-2"}>
                                                     <h5 className="card-title font-weight-bold mb-0">{"Rs "+post[1].price}</h5>
-                                                    <p className="card-text text-muted">  {post[1].title}</p>
+                                                    <p className="card-text">  {post[1].title}</p>
                                                     <p className="card-text mb-0"> {post[1].make + " " + post[1].model+ " "+ post[1].registration_city + " " +  post[1].registration_year}</p>
                                                     <p className="card-text mb-0"> {post[1].mileage  + "Kms " + post[1].engine_capacity+ " "+ post[1].engine_type}</p>
-                                                    <p className="card-text text-muted"> {post[1].city}</p>
+                                                    <p className="card-text"> {post[1].city}</p>
                                                 </div>
 
                                                 <div className={"col-md-2 mt-2"}>
@@ -723,7 +723,7 @@ class Posts extends Component {
                                              onError={i => (i.target.src = `${User_Avatar}`)}
                                         />
                                     </div>
-                                    <div className="card-body" style={{"border-left": "5px solid yellow"}}>
+                                    <div className="card-body card-post" style={{"border-left": "5px solid yellow"}}>
                                         <h5 className="card-title font-weight-bold mb-0">{"Rs "+post.price}</h5>
                                         <p className="card-text text-muted">  {post.title}</p>
                                         <p className="card-text mb-0"> {post.make + " " + post.model+ " "+ post.registration_city + " " +  post.registration_year}</p>
@@ -768,7 +768,7 @@ class Posts extends Component {
     renderOlxPosts= (posts) => {
         return (
             <div className="card card-div">
-                <div className={"card-body"}>
+                <div className={"card-body card-post"}>
                     <h6 className={"card-title"}>Olx Home</h6>
                     <hr/>
                     {this.state.loadingolx && (
@@ -789,7 +789,7 @@ class Posts extends Component {
                             <a  className="card card-post"  key={i} href={post[1][0].Link}  target={
                                 "_blank"}>
 
-                                <div className="card-body" style={{'height': '380px', "border-left": "5px solid yellow"}}>
+                                <div className="card-body card-post" style={{'height': '380px', "border-left": "5px solid yellow"}}>
                                     <div className={"mb-2"} style={{"text-align": "center"}}>
                                         <img className={"card-img-top mx-auto"} src={post[1][0].Image} alt={post[1][0].title} style={{
                                             height: "200px",
@@ -802,8 +802,8 @@ class Posts extends Component {
 
                                     <h5 className="card-title font-weight-bold mb-0">{post[1][0].Price}</h5>
                                     <p className="card-text mb-0"> {post[1][0].Details}</p>
-                                    <p className="card-text text-muted"> {post[1][0].Title}</p>
-                                    <p className="card-text text-muted"> {post[1][0].Location}</p>
+                                    <p className="card-text"> {post[1][0].Title}</p>
+                                    <p className="card-text"> {post[1][0].Location}</p>
                                 </div>
 
                             </a>
@@ -840,7 +840,7 @@ class Posts extends Component {
                                 <a className="card card-post"  key={i} href={post[1].link} target={
                                     "_blank"}>
 
-                                    <div className="card-body" style={{"border-left": "5px solid yellow", 'height': '440px'}}>
+                                    <div className="card-body card-post" style={{"border-left": "5px solid yellow", 'height': '440px'}}>
                                         <div className={"mb-2"} style={{"text-align": "center"}}>
                                             <img className={"card-img-top mx-auto"} src={post[1].image} alt={post[1].title} style={{
                                                 height: "200px",
@@ -852,10 +852,10 @@ class Posts extends Component {
                                         </div>
 
                                         <h5 className="card-title font-weight-bold mb-0">{post[1].price}</h5>
-                                        <p className="card-text text-muted"> {post[1].title}</p>
+                                        <p className="card-text"> {post[1].title}</p>
                                         <p className="card-text mb-0"> {post[1].engineCapacity + " " + post[1].engineType+ " "+ post[1].transmission + " " +  post[1].running + " - " +post[1].year}</p>
-                                        <p className="card-text text-muted"> {post[1].city}</p>
-                                        <p className="card-text text-muted"> {"Rating:  "+ post[1].rating}</p>
+                                        <p className="card-text"> {post[1].city}</p>
+                                        <p className="card-text"> {"Rating:  "+ post[1].rating}</p>
                                     </div>
                                 </a>
                             )
@@ -894,7 +894,7 @@ class Posts extends Component {
 
 
 
-                                    <div className="card-body" style={{"border-left": "5px solid yellow", "height": '416px'}}>
+                                    <div className="card-body card-post" style={{"border-left": "5px solid yellow", "height": '416px'}}>
 
                                         {post[1].image != null && (
                                             <div className={"mb-2"} style={{"text-align": "center"}}>
@@ -921,10 +921,10 @@ class Posts extends Component {
                                         )}
 
                                         <h5 className="card-title font-weight-bold mb-0">{post[1].price}</h5>
-                                        <p className="card-text text-muted"> {post[1].title}</p>
+                                        <p className="card-text"> {post[1].title}</p>
                                         <p className="card-text mb-0"> {post[1].Make + " " + post[1].Model+ " "+ post[1].RegistrationCity + " " +  post[1].Year + " - " +post[1].Transmission}</p>
-                                        <p className="card-text text-muted"> {post[1].city}</p>
-                                        <p className="card-text text-muted"> {"Insurance:  "+ post[1].Insurance}</p>
+                                        <p className="card-text"> {post[1].city}</p>
+                                        <p className="card-text"> {"Insurance:  "+ post[1].Insurance}</p>
                                     </div>
                                 </a>
                             )
@@ -969,11 +969,11 @@ class Posts extends Component {
                                              onError={i => (i.target.src = `${User_Avatar}`)}
                                         />
                                     </div>
-                                    <div className="card-body" style={{"border-left": "5px solid yellow"}}>
+                                    <div className="card-body card-post" style={{"border-left": "5px solid yellow"}}>
                                         <h5 className="card-title font-weight-bold mb-0">{post[1][0].Price}</h5>
                                         <p className="card-text mb-0"> {post[1][0].Details}</p>
-                                        <p className="card-text text-muted"> {post[1][0].Title}</p>
-                                        <p className="card-text text-muted"> {post[1][0].Location}</p>
+                                        <p className="card-text"> {post[1][0].Title}</p>
+                                        <p className="card-text"> {post[1][0].Location}</p>
                                     </div>
                                 </a>
                             )
@@ -1016,12 +1016,12 @@ class Posts extends Component {
                                          onError={i => (i.target.src = `${User_Avatar}`)}
                                     />
                                 </div>
-                                <div className="card-body" style={{"border-left": "5px solid yellow"}}>
+                                <div className="card-body card-post" style={{"border-left": "5px solid yellow"}}>
                                     <h5 className="card-title font-weight-bold mb-0">{post[1].price}</h5>
-                                    <p className="card-text text-muted"> {post[1].title}</p>
+                                    <p className="card-text"> {post[1].title}</p>
                                     <p className="card-text mb-0"> {post[1].engineCapacity + " " + post[1].engineType+ " "+ post[1].transmission + " " +  post[1].running + " - " +post[1].year}</p>
-                                    <p className="card-text text-muted"> {post[1].city}</p>
-                                    <p className="card-text text-muted"> {"Rating:  "+ post[1].rating}</p>
+                                    <p className="card-text"> {post[1].city}</p>
+                                    <p className="card-text"> {"Rating:  "+ post[1].rating}</p>
                                 </div>
                             </a>
                         )
@@ -1080,12 +1080,12 @@ class Posts extends Component {
                                     </div>
                                 )}
 
-                                <div className="card-body" style={{"border-left": "5px solid yellow"}}>
+                                <div className="card-body card-post" style={{"border-left": "5px solid yellow"}}>
                                     <h5 className="card-title font-weight-bold mb-0">{post[1].price}</h5>
-                                    <p className="card-text text-muted"> {post[1].title}</p>
+                                    <p className="card-text"> {post[1].title}</p>
                                     <p className="card-text mb-0"> {post[1].Make + " " + post[1].Model+ " "+ post[1].RegistrationCity + " " +  post[1].Year + " - " +post[1].Transmission}</p>
-                                    <p className="card-text text-muted"> {post[1].city}</p>
-                                    <p className="card-text text-muted"> {"Insurance:  "+ post[1].Insurance}</p>
+                                    <p className="card-text"> {post[1].city}</p>
+                                    <p className="card-text"> {"Insurance:  "+ post[1].Insurance}</p>
                                 </div>
                             </a>
                         )

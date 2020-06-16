@@ -20,7 +20,7 @@ class Profiletabs extends Component {
                                     <div key={i}>
 
                                             <div>
-                                                <Link to={`/user/${person._id}`} >
+                                                <Link style={{'color': 'deepskyblue'}}  to={`/user/${person._id}`} >
                                                     <h6>{person.name}</h6>
                                                 </Link>
                                             </div>
@@ -38,7 +38,7 @@ class Profiletabs extends Component {
                             return (
                                 <div key={i}>
                                     <div>
-                                        <Link to={`/user/${person._id}`} >
+                                        <Link style={{'color': 'deepskyblue'}}  to={`/user/${person._id}`} >
                                             <div>
                                                 <h6>{person.name}</h6>
                                             </div>
@@ -58,7 +58,7 @@ class Profiletabs extends Component {
                             return (
                                 <div key={i}>
                                     <div>
-                                        <Link to={`/post/${post._id}`} >
+                                        <Link style={{'color': 'deepskyblue'}}  to={`/post/${post._id}`} >
                                             <div>
                                                 <h6>{post.title}</h6>
 
@@ -79,7 +79,7 @@ class Profiletabs extends Component {
                             return (
                                 <div key={i}>
                                     <div>
-                                        <Link to={`/b_post/${post._id}`} >
+                                        <Link  style={{'color': 'deepskyblue'}}  to={`/b_post/${post._id}`} >
                                             <div>
                                                 <h6>{post.title}</h6>
 
@@ -104,7 +104,7 @@ class Profiletabs extends Component {
                                     return (
                                         <div key={i}>
                                             <div>
-                                                <Link to={`/post/${saved._id}`} >
+                                                <Link style={{'color': 'deepskyblue'}}  to={`/post/${saved._id}`} >
                                                     {saved.title}
                                                 </Link>
                                                 <Link to={`/unSavePost/${saved._id}`} className="btn  btn-raised btn-danger btn-sm ml-5">Unsave</Link>

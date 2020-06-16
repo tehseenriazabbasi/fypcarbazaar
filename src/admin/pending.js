@@ -48,7 +48,7 @@ class pending extends Component {
                         <tr scope="row"  key={i}>
 
                             <td >
-                                <Link to={`/user/${user._id}`} className="">{user.name}</Link>
+                                <Link to={`/user/${user._id}`} style={{'color': 'deepskyblue'}} className="">{user.name}</Link>
                             </td>
                             <td > {user.email}</td>
                             <td > {user.created}</td>

@@ -119,7 +119,7 @@ class SingleBuyerPost extends Component {
                                                     height: "500px",
                                                     "width": "auto",
                                                     "max-width": "100%"
-                                                }} src={'http://localhost:8080'+photos[0]} alt="First slide"/>
+                                                }} src={photos[0]} alt="First slide"/>
                                             </div>
 
                                         </div>
@@ -147,13 +147,13 @@ class SingleBuyerPost extends Component {
                                     <hr/>
                                     <div className={"row"}>
                                         <div className={"col-md-3"}>
-                                            <p className={"text-muted"}>Make</p>
+                                            <p >Make</p>
                                         </div>
                                         <div className={"col-md-3"}>
                                             <p>{post.make}</p>
                                         </div>
                                         <div className={"col-md-3"}>
-                                            <p className={"text-muted"}>Model</p>
+                                            <p>Model</p>
                                         </div>
                                         <div className={"col-md-3"}>
                                             <p>{post.model}</p>
@@ -163,13 +163,13 @@ class SingleBuyerPost extends Component {
 
                                     <div className={"row"}>
                                         <div className={"col-md-3"}>
-                                            <p className={"text-muted"}>Year</p>
+                                            <p>Year</p>
                                         </div>
                                         <div className={"col-md-3"}>
                                             <p>{post.registration_year}</p>
                                         </div>
                                         <div className={"col-md-3"}>
-                                            <p className={"text-muted"}>Kms Driven</p>
+                                            <p>Kms Driven</p>
                                         </div>
                                         <div className={"col-md-3"}>
                                             <p>{post.mileage}</p>
@@ -184,10 +184,10 @@ class SingleBuyerPost extends Component {
                                 <div className={"card-body"}>
                                     <h4 className={"card-title"}><b>Rs  {post.price}</b></h4>
                                     <p><b>{post.registration_year} - {post.mileage}km</b></p>
-                                    <p className="card-text text-muted">{post.make} {post.model} {post.engine_capacity}cc model {post.registration_year}</p>
+                                    <p className="card-text">{post.make} {post.model} {post.engine_capacity}cc model {post.registration_year}</p>
                                     <div style={{"display": "flex"}}>
-                                        <p className={"card-text text-muted"}>{post.city}</p>
-                                        <p className={"card-text text-muted ml-5"}>{new Date(post.created).toDateString()}</p>
+                                        <p className={"card-text"}>{post.city}</p>
+                                        <p className={"card-text ml-5"}>{new Date(post.created).toDateString()}</p>
                                     </div>
 
                                 </div>
@@ -267,7 +267,7 @@ class SingleBuyerPost extends Component {
                                 <div className={"card-body"}>
                                     <h6 className={"card-title"} style={{'font-size': 'large'}}>Posted In</h6>
                                     <hr/>
-                                    <p className={"card-text text-muted"}>{post.city}</p>
+                                    <p className={"card-text"}>{post.city}</p>
                                 </div>
                             </div>
 
@@ -326,7 +326,7 @@ class SingleBuyerPost extends Component {
                     <tr scope="row"  key={i}>
 
                         <td >
-                            <Link to={`/post/${post._id}`} className="">{post.title}</Link>
+                            <Link to={`/post/${post._id}`} style={{'color': 'deepskyblue'}}  className="">{post.title}</Link>
                         </td>
                         <td>
                             {this.state.post.make == post.make ?

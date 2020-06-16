@@ -95,13 +95,13 @@ class AdsManagement extends Component {
                             <tr scope="row"  key={i}>
 
                                 <td >
-                                    <Link to={`/post/${post._id}`} className="">{post.title}</Link>
+                                    <Link to={`/post/${post._id}`} style={{'color': 'deepskyblue'}} className="">{post.title}</Link>
                                 </td>
                                 <td> {post.postedBy.name} </td>
                                 <td> {post.status} </td>
                                 <td> {post.created} </td>
                                 <td>
-                                    <Link to={`/post_details/${post._id}`} className="btn  btn-raised btn-primary btn-sm">Details</Link>
+                                    <Link to={`/post_details/${post._id}`}  className="btn  btn-raised btn-primary btn-sm">Details</Link>
                                 </td>
 
                                 <td>

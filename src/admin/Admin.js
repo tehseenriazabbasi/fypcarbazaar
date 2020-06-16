@@ -5,7 +5,7 @@ import {getReportedPosts, getReportedUsers, getUserPostReports, getUserReports, 
 import TextField from "@material-ui/core/TextField";
 import EnableUser from "./EnableUser";
 import DisableUser from "./DisableUser";
-
+import "./admin.css"
 
 class Admin extends Component {
     state = {
@@ -175,7 +175,7 @@ class Admin extends Component {
             <div className={"card-body"}>
                 <div style={{display: "inline-flex"}}>
                     <h6 className="card-title">Reported Users</h6>
-                    <a style={{'margin-left': '15px'}} href="/userReports">View All</a>
+                    <a  style={{'margin-left': '15px', 'color': 'deepskyblue'}} href="/userReports">View All</a>
                     <div className={"ml-5 mb-3"}>
                         <input
                             onChange={this.handleChange("usercount")}
@@ -209,7 +209,7 @@ class Admin extends Component {
                         <tr scope="row"  key={i}>
 
                             <td >
-                                <Link to={`/user/${user._id}`} className="">{user.name}</Link>
+                                <Link  style={{'color': 'deepskyblue'}} to={`/user/${user._id}`} className="">{user.name}</Link>
                             </td>
                             <td > {user.email}</td>
                             <td > {user.phone}</td>
@@ -221,10 +221,10 @@ class Admin extends Component {
                             </td>
 
                             <td>
-                                <Link to={`/profile_details/${user._id}`}>View</Link>
+                                <Link style={{'color': 'deepskyblue'}} to={`/profile_details/${user._id}`}>View</Link>
                             </td>
                             <td>
-                                <Link to={`/u/edit/${user._id}`}>Edit</Link>
+                                <Link style={{'color': 'deepskyblue'}} to={`/u/edit/${user._id}`}>Edit</Link>
                             </td>
 
                         </tr>
@@ -242,7 +242,7 @@ class Admin extends Component {
             <div className={"card-body"}>
                 <div style={{display: "inline-flex"}}>
                     <h6 className="card-title">Reported Posts</h6>
-                    <a style={{'margin-left': '15px'}} href="/postReports">View All</a>
+                    <a style={{'margin-left': '15px', 'color': 'deepskyblue'}} href="/postReports">View All</a>
                     <div className={"ml-5 mb-3"}>
                         <input
                             onChange={this.handleChange("postcount")}
@@ -274,7 +274,7 @@ class Admin extends Component {
                         <tr scope="row"  key={i}>
 
                             <td >
-                                <Link to={`/post/${post._id}`} className="">{post.title}</Link>
+                                <Link to={`/post/${post._id}`} style={{'color': 'deepskyblue'}} className="">{post.title}</Link>
                             </td>
                             <td > Fake post</td>
                             <td> {post.postedBy.email} </td>
@@ -284,11 +284,11 @@ class Admin extends Component {
                                 {post.status == 'active' && (<i  style={{'color': 'Green'}} className="fa fa-check-circle ml-2 fa-2x"></i>)}
                             </td>
                             <td>
-                                <Link to={`/post_details/${post._id}`} >View</Link>
+                                <Link to={`/post_details/${post._id}`} style={{'color': 'deepskyblue'}} >View</Link>
                             </td>
 
                             <td>
-                                <Link to={`/post/edit/${post._id}`}>Edit</Link>
+                                <Link to={`/post/edit/${post._id}`}style={{'color': 'deepskyblue'}} >Edit</Link>
                             </td>
 
 
@@ -327,7 +327,7 @@ class Admin extends Component {
                                         "box-shadow": "0 4px 8px 0 rgba(0,0,0,0.2)"
 
                                     }}><i className="fa fa-users fa-4x" style={{"margin": "16px" , "color": 'black'}}></i> </div>
-                                    <div className="card-body">
+                                    <div className="card-body card-post">
                                         <p>Total Users</p>
                                         <b>{this.state.total_users.map((user,i)=>(
                                             <b scope="row"  key={i}>
@@ -354,7 +354,7 @@ class Admin extends Component {
                                         "box-shadow": "0 4px 8px 0 rgba(0,0,0,0.2)"
 
                                     }}><i className = "fa fa-user-plus fa-3x" style={{"margin": "25px", "color" : "black"}}></i> </div>
-                                    <div className="card-body">
+                                    <div className="card-body card-post">
                                         <p>New Members</p>
                                         <b>{this.state.new_members.map((user,i)=>(
                                             <b scope="row"  key={i}>
@@ -384,7 +384,7 @@ class Admin extends Component {
                                         "box-shadow": "0 4px 8px 0 rgba(0,0,0,0.2)"
 
                                     }}><i className = "fa fa-user-plus fa-3x" style={{"margin": "25px", "color" : "black"}}></i> </div>
-                                    <div className="card-body">
+                                    <div className="card-body card-post">
                                         <p>Pending Requests</p>
                                         <b>{this.state.total_reqs.map((user,i)=>(
                                             <b scope="row"  key={i}>
@@ -414,7 +414,7 @@ class Admin extends Component {
                                         "box-shadow": "0 4px 8px 0 rgba(0,0,0,0.2)"
 
                                     }}><i className = "fa fa-clone fa-3x" style={{"margin": "25px" , "color" : 'black'}}></i> </div>
-                                    <div className="card-body">
+                                    <div className="card-body card-post">
                                         <p>Total Posts</p>
                                         <b>{this.state.total_posts.map((post,i)=>(
                                             <b scope="row"  key={i}>
@@ -442,7 +442,7 @@ class Admin extends Component {
                                         "box-shadow": "0 4px 8px 0 rgba(0,0,0,0.2)"
 
                                     }}><i className = "fa fa-check fa-3x" style={{"margin": "25px", "color": "black"}}></i> </div>
-                                    <div className="card-body">
+                                    <div className="card-body card-post">
                                         <p>Active Posts</p>
                                         <b>{this.state.total_active_posts.map((post,i)=>(
                                             <b scope="row"  key={i}>
@@ -469,7 +469,7 @@ class Admin extends Component {
                                         "box-shadow": "0 4px 8px 0 rgba(0,0,0,0.2)"
 
                                     }}><i className="fa fa-ban fa-4x" style={{"margin": "21px", "color" : "black"}}></i> </div>
-                                    <div className="card-body">
+                                    <div className="card-body card-post">
                                         <p>Disabled Posts</p>
                                         <b>{this.state.total_deactive_posts.map((post,i)=>(
                                             <b scope="row"  key={i}>

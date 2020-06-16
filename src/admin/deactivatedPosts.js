@@ -78,7 +78,7 @@ class deactivePosts extends Component {
                             <tr scope="row"  key={i}>
 
                                 <td >
-                                    <Link to={`/post/${post._id}`} className="">{post.title}</Link>
+                                    <Link to={`/post/${post._id}`} style={{'color': 'deepskyblue'}} className="">{post.title}</Link>
                                 </td>
                                 <td> {post.postedBy.name} </td>
                                 <td> {post.status} </td>

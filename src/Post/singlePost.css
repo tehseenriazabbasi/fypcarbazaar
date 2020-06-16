@@ -15,3 +15,11 @@
     text-align: center;
     color: white;
 }
+
+h5{
+    color: deepskyblue;
+}
+
+h5+i{
+    color: deepskyblue;
+}

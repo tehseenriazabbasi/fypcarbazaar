@@ -1,0 +1,10 @@
+.post {
+    -webkit-transition: width 2s;
+    transition: width 2s;
+    color: deepskyblue;
+}
+.post:hover {
+    opacity: 0.75;
+    text-decoration: none;
+    color: black;
+}
