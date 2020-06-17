@@ -298,10 +298,10 @@ Thanks.`});
                                 <div className={"card-body"}>
                                     <h4 className={"card-title"}><b>Rs  {post.price}</b></h4>
                                     <p><b>{post.registration_year} - {post.mileage}km</b></p>
-                                    <p className="card-text text-muted">{post.make} {post.model} {post.engine_capacity}cc model {post.registration_year}</p>
+                                    <p className="card-text ">{post.make} {post.model} {post.engine_capacity}cc model {post.registration_year}</p>
                                     <div style={{"display": "flex"}}>
-                                        <p className={"card-text text-muted"}>{post.city}</p>
-                                        <p className={"card-text text-muted ml-5"}>{new Date(post.created).toDateString()}</p>
+                                        <p className={"card-text "}>{post.city}</p>
+                                        <p className={"card-text  ml-5"}>{new Date(post.created).toDateString()}</p>
                                     </div>
 
                                 </div>
@@ -425,7 +425,7 @@ Thanks.`});
                                 <div className={"card-body"}>
                                     <h6 className={"card-title"} style={{'font-size': 'large'}}>Posted In</h6>
                                     <hr/>
-                                    <p className={"card-text text-muted"}>{post.city}</p>
+                                    <p className={"card-text"}>{post.city}</p>
                                 </div>
                             </div>
 
