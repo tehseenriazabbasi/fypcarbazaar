@@ -204,7 +204,7 @@ Thanks.`});
                                         <Player
                                             playsInline
                                             poster="/assets/poster.png"
-                                            src={'http://localhost:8080'+video[0]}
+                                            src={video[0]}
                                         />
                                     </div>
                                 </>
@@ -219,13 +219,13 @@ Thanks.`});
                                     <hr/>
                                     <div className={"row"}>
                                         <div className={"col-md-3"}>
-                                            <p className={"text-muted"}>Make</p>
+                                            <p className={""}>Make</p>
                                         </div>
                                         <div className={"col-md-3"}>
                                             <p>{post.make}</p>
                                         </div>
                                         <div className={"col-md-3"}>
-                                            <p className={"text-muted"}>Model</p>
+                                            <p className={""}>Model</p>
                                         </div>
                                         <div className={"col-md-3"}>
                                             <p>{post.model}</p>
@@ -235,13 +235,13 @@ Thanks.`});
 
                                     <div className={"row"}>
                                         <div className={"col-md-3"}>
-                                            <p className={"text-muted"}>Year</p>
+                                            <p className={""}>Year</p>
                                         </div>
                                         <div className={"col-md-3"}>
                                             <p>{post.registration_year}</p>
                                         </div>
                                         <div className={"col-md-3"}>
-                                            <p className={"text-muted"}>Kms Driven</p>
+                                            <p className={""}>Kms Driven</p>
                                         </div>
                                         <div className={"col-md-3"}>
                                             <p>{post.mileage}</p>
@@ -250,13 +250,13 @@ Thanks.`});
 
                                     <div className={"row"}>
                                         <div className={"col-md-3"}>
-                                            <p className={"text-muted"}>Feul</p>
+                                            <p className={""}>Feul</p>
                                         </div>
                                         <div className={"col-md-3"}>
                                             <p>{post.engine_type}</p>
                                         </div>
                                         <div className={"col-md-3"}>
-                                            <p className={"text-muted"}>Registered In</p>
+                                            <p className={""}>Registered In</p>
                                         </div>
                                         <div className={"col-md-3"}>
                                             <p>{post.registration_city}</p>
@@ -264,13 +264,13 @@ Thanks.`});
                                     </div>
                                     <div className={"row"}>
                                         <div className={"col-md-3"}>
-                                            <p className={"text-muted"}>Condition</p>
+                                            <p className={""}>Condition</p>
                                         </div>
                                         <div className={"col-md-3"}>
                                             <p>{post.condition}</p>
                                         </div>
                                         <div className={"col-md-3"}>
-                                            <p className={"text-muted"}>Color</p>
+                                            <p className={""}>Color</p>
                                         </div>
                                         <div className={"col-md-3"}>
                                             <p>{post.exterior_color}</p>
@@ -278,7 +278,7 @@ Thanks.`});
                                     </div>
                                     <div className={"row"}>
                                         <div className={"col-md-3"}>
-                                            <p className={"text-muted"}>Transmission</p>
+                                            <p className={""}>Transmission</p>
                                         </div>
                                         <div className={"col-md-3"}>
                                             <p>{post.transmission}</p>
