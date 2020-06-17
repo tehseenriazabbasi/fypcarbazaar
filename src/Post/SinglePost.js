@@ -204,6 +204,7 @@ Thanks.`});
                                         <Player
                                             playsInline
                                             poster="/assets/poster.png"
+
                                             src={video[0]}
                                         />
                                     </div>
