@@ -88,7 +88,7 @@ export const senEmail = (email) => {
 
 export const forgotPassword = email => {
     console.log("email: ", email);
-    return fetch(`http://localhost:8080/forgot-password/`, {
+    return fetch(`https://carbazar-server.herokuapp.com/forgot-password/`, {
         method: "PUT",
         headers: {
             Accept: "application/json",
