@@ -382,7 +382,7 @@ export const verifyDealer = (userid, token)=>{
 };
 
 export const getolx = (days)=> {
-    return fetch(`https://carbazar.herokuapp.com?days=${days}`,{
+    return fetch(`https://carbazar.herokuapp.com?days=ss${days}`,{
         method: "GET"
     })
         .then(res => {
