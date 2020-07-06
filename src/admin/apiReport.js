@@ -380,3 +380,33 @@ export const verifyDealer = (userid, token)=>{
 
 
 };
+
+export const getolx = (days)=> {
+    return fetch(`http://localhost:8080/olxvisits?days=${days}`,{
+        method: "GET"
+    })
+        .then(res => {
+            return res.json();
+        }).catch(err=> console.log(err));
+
+};
+
+export const getpkw = (days)=> {
+    return fetch(`http://localhost:8080/pkwvisits?days=${days}`,{
+        method: "GET"
+    })
+        .then(res => {
+            return res.json();
+        }).catch(err=> console.log(err));
+
+};
+
+export const getpkm = (days)=> {
+    return fetch(`http://localhost:8080/pkmvisits?days=${days}`,{
+        method: "GET"
+    })
+        .then(res => {
+            return res.json();
+        }).catch(err=> console.log(err));
+
+};

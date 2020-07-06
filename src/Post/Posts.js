@@ -19,11 +19,12 @@ import {
     searchOlxFilters,
     searchPKWFilters,
     searchPKMFilters,
-    list_buyerPosts
+    list_buyerPosts,
+    olxvisit
 } from "./apiPost";
 import {Link} from 'react-router-dom';
 import User_Avatar from "../images/User_Avatar.png";
-import {isAuthenticated} from "../auth";
+import { isAuthenticated} from "../auth";
 import TextField from '@material-ui/core/TextField';
 import Button from "@material-ui/core/Button";
 import InputLabel from "@material-ui/core/InputLabel";
@@ -124,6 +125,19 @@ class Posts extends Component {
             }
         })
     };
+
+
+    addVisit = event => {
+        event.preventDefault();
+        olxvisit().then(data => {
+            if(data.error){
+                console.log("error")
+            }
+
+        })
+    };
+
+
 
     isValid=() =>{
 
@@ -786,7 +800,9 @@ class Posts extends Component {
                     <div className="card-columns">
                     {posts.slice(this.state.olxoffset, this.state.olxoffset + this.state.olxperPage).map((post,i)=>{
                         return (
-                            <a  className="card card-post"  key={i} href={post[1][0].Link}  target={
+                            <a  className="card card-post"  key={i} href={post[1][0].Link}  onClick={() => {
+                                olxvisit("olx")
+                            }} target={
                                 "_blank"}>
 
                                 <div className="card-body card-post" style={{'height': '380px', "border-left": "5px solid yellow"}}>
@@ -837,7 +853,9 @@ class Posts extends Component {
                     <div className="card-columns">
                         {posts.slice(this.state.pkwoffset, this.state.pkwoffset + this.state.pkwperPage).map((post,i)=>{
                             return (
-                                <a className="card card-post"  key={i} href={post[1].link} target={
+                                <a className="card card-post"  key={i} href={post[1].link} onClick={() => {
+                                    olxvisit("pkw")
+                                }} target={
                                     "_blank"}>
 
                                     <div className="card-body card-post" style={{"border-left": "5px solid yellow", 'height': '440px'}}>
@@ -889,7 +907,9 @@ class Posts extends Component {
                     <div className="card-columns">
                         {posts.slice(this.state.pkmoffset, this.state.pkmoffset + this.state.pkmperPage).map((post,i)=>{
                             return (
-                                <a className="card card-post"  key={i} href={post[1].link} target={
+                                <a className="card card-post"  key={i} href={post[1].link} onClick={() => {
+                                    olxvisit("pkm")
+                                }} target={
                                     "_blank"}>
 
 

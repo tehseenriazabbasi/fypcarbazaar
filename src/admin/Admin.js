@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import { isAuthenticated } from "../auth";
 import {Link, Redirect} from "react-router-dom";
 import {getReportedPosts, getReportedUsers, getUserPostReports, getUserReports, totalUsers,totalPosts, activePosts, deactivePosts ,newMembers, getPendingRequests, getReportedPostsSearch, getReportedUserSearch} from "./apiReport";
-import TextField from "@material-ui/core/TextField";
-import EnableUser from "./EnableUser";
-import DisableUser from "./DisableUser";
+
+
 import "./admin.css"
 
 class Admin extends Component {

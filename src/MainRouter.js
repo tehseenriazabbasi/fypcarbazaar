@@ -44,6 +44,7 @@ import SingleBuyerPost from "./Post/SingleBuyerPost"
 import reviews from "./review/review"
 import newReview from "./review/newReview"
 import Recommender from "./recommender/Recommender"
+import analytics from "./admin/analytics"
 
 import {
     CometChatConversationList,
@@ -96,6 +97,7 @@ const MainRouter = () => (
 
 
             <Route  path="/car/review" component={reviews} />
+            <Route  path="/admin/analytics" component={analytics} />
             <Route  path="/car/new_review" component={newReview} />
             <Route  path="/car/recommendations" component={Recommender} />
 

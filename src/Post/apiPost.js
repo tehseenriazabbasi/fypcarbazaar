@@ -608,3 +608,20 @@ export const publish = (token, postId) => {
         })
         .catch(err => console.log(err));
 };
+
+
+export const olxvisit = (name)=> {
+    return fetch(`http://localhost:8080/visit/`,{
+        method: "POST",
+        headers: {
+            Accept: "application/json",
+            "Content-Type" : 'application/json',
+
+        },
+        body: JSON.stringify({name})
+    })
+        .then(res => {
+            return res.json();
+        }).catch(err=> console.log(err));
+
+};
