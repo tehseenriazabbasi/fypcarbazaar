@@ -611,7 +611,7 @@ export const publish = (token, postId) => {
 
 
 export const olxvisit = (name)=> {
-    return fetch(`https://carbazar.herokuapp.com/visit/`,{
+    return fetch(`https://carbazar-server.herokuapp.com/visit/`,{
         method: "POST",
         headers: {
             Accept: "application/json",
