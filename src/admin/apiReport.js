@@ -405,7 +405,7 @@ export const getpkw = (days)=> {
 
 
 export const getolx = (days)=> {
-    return fetch(`https://carbazar-server.herokuapp.com/olxvisits??days=${days}`,{
+    return fetch(`https://carbazar-server.herokuapp.com/olxvisits?days=${days}`,{
         method: "GET"
     })
         .then(res => {
