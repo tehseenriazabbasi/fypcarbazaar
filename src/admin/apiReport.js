@@ -381,8 +381,10 @@ export const verifyDealer = (userid, token)=>{
 
 };
 
-export const getolx = (days)=> {
-    return fetch(`https://carbazar.herokuapp.com?days=${days}`,{
+
+
+export const getpkm = (days)=> {
+    return fetch(`https://carbazar.herokuapp.com?days=${days}&d=${days}`,{
         method: "GET"
     })
         .then(res => {
@@ -401,7 +403,8 @@ export const getpkw = (days)=> {
 
 };
 
-export const getpkm = (days)=> {
+
+export const getolx = (days)=> {
     return fetch(`https://carbazar.herokuapp.com?days=${days}`,{
         method: "GET"
     })
