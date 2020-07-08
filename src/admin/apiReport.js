@@ -411,5 +411,4 @@ export const getolx = (days)=> {
         .then(res => {
             return res.json();
         }).catch(err=> console.log(err));
-
 };
