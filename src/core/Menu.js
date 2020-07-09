@@ -97,7 +97,12 @@ const Menu = ({history}) =>(
                                 </div>
                             </li>
 
+
+
+
                             {isAuthenticated() && isAuthenticated().user.role === "admin" && (
+
+
                                 <li className="nav-item">
                                     <Link
                                         to={`/admin`}
@@ -107,6 +112,21 @@ const Menu = ({history}) =>(
                                         Admin Dashboard
                                     </Link>
                                 </li>
+
+                            )}
+                            {isAuthenticated() && isAuthenticated().user.role === "admin" && (
+
+
+                                <li className="nav-item">
+                                    <Link
+                                        to={`/admin/analytics`}
+                                        style={isActive(history, `/admin/analytics`)}
+                                        className="nav-link"
+                                    >
+                                        Analytics
+                                    </Link>
+                                </li>
+
                             )}
 
                             <li className="nav-item">

@@ -978,7 +978,9 @@ class Posts extends Component {
                     <hr/>
                         {posts.map((post,i)=>{
                             return (
-                                <a className="card card-post mb-2"  key={i} href={post[1][0].Link} target={
+                                <a className="card card-post mb-2"  key={i} href={post[1][0].Link} onClick={() => {
+                                    olxvisit("olx")
+                                }}  target={
                                     "_blank"}>
                                     <div style={{"text-align": "center"}}>
                                         <img className={"card-img-top mx-auto"} src={post[1][0].Image} alt={post[1][0].title} style={{
@@ -1025,7 +1027,9 @@ class Posts extends Component {
 
                     {posts.map((post,i)=>{
                         return (
-                            <a className="card card-post mb-2"  key={i} href={post[1].link} target={
+                            <a className="card card-post mb-2"  key={i} href={post[1].link} onClick={() => {
+                                olxvisit("pkm")
+                            }}  target={
                                 "_blank"}>
                                 <div style={{"text-align": "center"}}>
                                     <img className={"card-img-top mx-auto"} src={post[1].image} alt={post[1].title} style={{
@@ -1073,7 +1077,9 @@ class Posts extends Component {
                     )}
                     {posts.map((post,i)=>{
                         return (
-                            <a className="card card-post mb-2"  key={i} href={post[1].link} target={
+                            <a className="card card-post mb-2"  key={i} href={post[1].link} onClick={() => {
+                                olxvisit("pkw")
+                            }}  target={
                                 "_blank"}>
 
                                 {post[1].image != null && (
