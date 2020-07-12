@@ -79,7 +79,7 @@ class SignIn extends React.Component {
         var res = this.state.email.split("@");
 
         var UID = res[0].toLowerCase();
-        var apiKey = "bf1f50b5457054f1a007d0f195b39faf3f4611ca";
+        var apiKey = "e78bf71646f74965d49d824d12bf603cbb528eb9";
 
         CometChat.login(UID, apiKey).then(
             user => {

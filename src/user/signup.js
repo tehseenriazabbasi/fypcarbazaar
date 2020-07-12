@@ -80,7 +80,7 @@ class Signup extends Component {
             else {
               var res = this.state.email.split("@");
 
-              let apiKey = "bf1f50b5457054f1a007d0f195b39faf3f4611ca";
+              let apiKey = "e78bf71646f74965d49d824d12bf603cbb528eb9";
               var uid = res[0];
               var name = this.state.name;
 

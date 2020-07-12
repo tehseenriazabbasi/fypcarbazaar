@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { CometChat } from "@cometchat-pro/chat"
 
-var appID = '2009669783f36e1';
+var appID = '21085943a380909';
 var region = 'us';
 var appSetting = new CometChat.AppSettingsBuilder().subscribePresenceForAllUsers().setRegion(region).build();
 CometChat.init(appID, appSetting).then(() => {
